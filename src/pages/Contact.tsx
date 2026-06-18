@@ -25,24 +25,24 @@ import type { QuoteData } from "./QuoteCalculator";
 const contactInfo = [
   {
     icon: Mail,
-    title: "Chat to sale",
-    description: "Email us for scheduling",
-    value: "hello@aquafix.com",
-    href: "mailto:hello@aquafix.com",
+    title: "Email Us",
+    description: "We reply within one working day",
+    value: "cheshiresprayingspecialists@gmail.com",
+    href: "mailto:cheshiresprayingspecialists@gmail.com",
   },
   {
     icon: MapPin,
-    title: "Visit our office",
-    description: "Visit us for scheduling",
-    value: "100 Smart Street VIC 3066 AU",
-    href: "https://www.google.com/maps",
+    title: "Service Area",
+    description: "Free site visits across the region",
+    value: "Ellesmere Port & all of Cheshire",
+    href: "https://www.google.com/maps?q=Ellesmere+Port+UK",
   },
   {
     icon: Phone,
-    title: "Contact us",
-    description: "Call us for scheduling",
-    value: "+(1)578-365-379",
-    href: "tel:+1578365379",
+    title: "Call Us",
+    description: "Speak to the team direct",
+    value: "07882 395895 / 07746 476414",
+    href: "tel:+447882395895",
   },
 ];
 
