@@ -1,13 +1,46 @@
-
 const Logo = ({ isDark = false }: { isDark?: boolean }) => {
+  const textColor = isDark ? "text-white" : "text-primary";
+  const strokeColor = isDark ? "#ffffff" : "hsl(240 6% 11%)";
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2.5">
       <div className="relative">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28" fill="none">
-          <path d="M8.554 27.5782C2.7085 25.956 -0.939754 20.0348 0.212042 14.1568C0.787039 11.2133 2.39487 8.95301 4.52001 6.95764C4.97063 6.53586 5.19955 6.4926 5.64837 6.95764C8.10698 9.45771 10.6034 11.9253 13.0801 14.42C14.2193 15.5646 14.3148 17.021 13.3324 18.0033C12.3501 18.9857 10.8936 18.8902 9.75086 17.751C8.33049 16.3324 6.91913 14.9049 5.43748 13.425C3.19878 17.6537 6.41804 23.0305 11.2163 23.2937C12.6181 23.3839 14.0143 23.047 15.2207 22.3274C16.4271 21.6079 17.387 20.5395 17.9739 19.2633C18.58 17.9778 18.7726 16.536 18.525 15.1366C18.2774 13.7371 17.6018 12.4489 16.5913 11.4495C14.0222 8.83464 11.4338 6.24205 8.82618 3.67169C8.45126 3.30218 8.36474 3.08407 8.79734 2.68752C9.6373 1.91786 10.4376 1.10313 11.2163 0.270374C11.5768 -0.111755 11.7877 -0.0721004 12.1392 0.282992C14.7546 2.92906 17.4529 5.49582 20.0053 8.19956C23.3038 11.6946 24.1618 15.8187 22.5973 20.3574C20.6506 26.0209 14.3887 29.2005 8.554 27.5782Z" fill="#A3F000" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="44"
+          height="44"
+          viewBox="0 0 44 44"
+          fill="none"
+          aria-label="Cheshire Spray Specialists"
+        >
+          {/* Stencil-style hex shield */}
+          <path
+            d="M22 2 L40 12 V32 L22 42 L4 32 V12 Z"
+            stroke={strokeColor}
+            strokeWidth="2.5"
+            fill="none"
+          />
+          {/* CSS stencil letters */}
+          <text
+            x="22"
+            y="27"
+            textAnchor="middle"
+            fontFamily="'Bebas Neue', Impact, sans-serif"
+            fontSize="14"
+            letterSpacing="1"
+            fill={strokeColor}
+          >
+            CSS
+          </text>
+          {/* Ember spray dot */}
+          <circle cx="34" cy="10" r="3.2" fill="hsl(14 78% 57%)" />
+          <circle cx="38" cy="7" r="1.2" fill="hsl(16 100% 65%)" opacity="0.85" />
+          <circle cx="36" cy="14" r="1" fill="hsl(16 100% 65%)" opacity="0.7" />
         </svg>
       </div>
-      <span className={`text-2xl font-bold ${isDark ? 'text-white' : 'text-primary'}`}>Aquafix</span>
+      <div className="flex flex-col leading-none">
+        <span className={`font-bebas tracking-wider text-xl ${textColor}`}>CHESHIRE SPRAY</span>
+        <span className="font-bebas tracking-[0.25em] text-[10px] text-tertiary mt-0.5">SPECIALISTS</span>
+      </div>
     </div>
   );
 };
