@@ -2,65 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Clash Grotesk Font */
-@import url("https://api.fontshare.com/v2/css?f[]=clash-grotesk@200,300,400,500,600,700&display=swap");
-
 @layer base {
   :root {
-    /* Aquafix Brand Colors */
-    --background: 228 71% 14%; /* #0C133B */
+    /* Cheshire Spray — Industrial Charcoal & Ember */
+    --background: 240 6% 6%;          /* #0f0f10 deep charcoal */
     --foreground: 0 0% 100%;
 
-    --card: 240 14% 96%;
-    --card-foreground: 228 71% 14%;
+    --card: 240 6% 96%;
+    --card-foreground: 240 6% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 228 71% 14%;
+    --popover-foreground: 240 6% 10%;
 
-    --primary: 217 100% 28%; /* #0C133B */
+    --primary: 240 6% 11%;            /* #1c1c1f charcoal */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 208 18% 44%; /* #003890 */
+    --secondary: 240 4% 24%;          /* #3a3a3f mid charcoal */
     --secondary-foreground: 0 0% 100%;
 
-    --tertiary: 78 100% 47%; /* #A3F000 */
-    --tertiary-foreground: 228 71% 14%;
+    --tertiary: 14 78% 57%;           /* #e85d3a ember */
+    --tertiary-foreground: 0 0% 100%;
 
-    --muted: 231 5% 38%; /* #595B67 */
-    --muted-foreground: 231 5% 38%;
+    --muted: 240 4% 40%;
+    --muted-foreground: 240 4% 35%;
 
-    --accent: 78 100% 47%; /* #A3F000 */
-    --accent-foreground: 228 71% 14%;
+    --accent: 16 100% 65%;            /* #ff7a4d bright ember */
+    --accent-foreground: 240 6% 6%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 228 20% 25%;
-    --input: 228 20% 25%;
-    --ring: 78 100% 47%;
+    --border: 240 6% 85%;
+    --input: 240 6% 85%;
+    --ring: 14 78% 57%;
 
     --radius: 0.5rem;
 
     /* Custom Colors */
-    --grey: 200 3% 34%; /* #56595A */
-    --text-grey: 231 5% 38%; /* #595B67 */
+    --grey: 240 4% 30%;
+    --text-grey: 240 4% 35%;
     --white: 0 0% 100%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(
       135deg,
-      hsl(var(--primary)),
-      hsl(var(--secondary))
+      hsl(240 6% 6%),
+      hsl(240 6% 18%)
     );
     --gradient-accent: linear-gradient(
       135deg,
       hsl(var(--tertiary)),
-      hsl(78 100% 55%)
+      hsl(16 100% 65%)
     );
 
     /* Shadows */
-    --shadow-card: 0 10px 40px -10px hsl(var(--primary) / 0.3);
-    --shadow-glow: 0 0 30px hsl(var(--tertiary) / 0.4);
+    --shadow-card: 0 10px 40px -10px hsl(240 6% 0% / 0.5);
+    --shadow-glow: 0 0 30px hsl(var(--tertiary) / 0.45);
 
     /* Sidebar */
     --sidebar-background: 0 0% 98%;
@@ -70,29 +67,29 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 14 78% 57%;
   }
 
   .dark {
-    --background: 228 71% 14%;
+    --background: 240 6% 6%;
     --foreground: 0 0% 100%;
-    --card: 228 71% 10%;
+    --card: 240 6% 9%;
     --card-foreground: 0 0% 100%;
-    --popover: 228 71% 10%;
+    --popover: 240 6% 9%;
     --popover-foreground: 0 0% 100%;
     --primary: 0 0% 100%;
-    --primary-foreground: 228 71% 14%;
-    --secondary: 214 100% 28%;
+    --primary-foreground: 240 6% 6%;
+    --secondary: 240 4% 24%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 231 5% 38%;
-    --muted-foreground: 231 5% 50%;
-    --accent: 78 100% 47%;
-    --accent-foreground: 228 71% 14%;
-    --destructive: 0 62.8% 30.6%;
+    --muted: 240 4% 40%;
+    --muted-foreground: 240 4% 65%;
+    --accent: 16 100% 65%;
+    --accent-foreground: 240 6% 6%;
+    --destructive: 0 62% 35%;
     --destructive-foreground: 0 0% 100%;
-    --border: 228 20% 25%;
-    --input: 228 20% 25%;
-    --ring: 78 100% 47%;
+    --border: 240 6% 20%;
+    --input: 240 6% 20%;
+    --ring: 14 78% 57%;
   }
 }
 
@@ -106,31 +103,31 @@
   }
 
   body {
-    @apply bg-background text-foreground font-clash antialiased;
+    @apply bg-background text-foreground font-barlow antialiased;
   }
 
   h1 {
-    @apply text-5xl md:text-6xl lg:text-[70px] font-semibold leading-tight tracking-tight;
+    @apply font-bebas text-5xl md:text-6xl lg:text-[70px] font-normal leading-tight tracking-wide uppercase;
   }
 
   h2 {
-    @apply text-4xl md:text-[52px] font-semibold leading-tight tracking-tight;
+    @apply font-bebas text-4xl md:text-[52px] font-normal leading-tight tracking-wide uppercase;
   }
 
   h3 {
-    @apply text-3xl md:text-[40px] font-semibold leading-tight;
+    @apply font-bebas text-3xl md:text-[40px] font-normal leading-tight tracking-wide uppercase;
   }
 
   h4 {
-    @apply text-2xl md:text-[30px] font-medium leading-snug;
+    @apply font-bebas text-2xl md:text-[30px] font-normal leading-snug tracking-wide uppercase;
   }
 
   h5 {
-    @apply text-xl md:text-2xl font-medium;
+    @apply font-bebas text-xl md:text-2xl font-normal tracking-wide uppercase;
   }
 
   h6 {
-    @apply text-lg font-medium;
+    @apply font-bebas text-lg font-normal tracking-wide uppercase;
   }
 
   p {

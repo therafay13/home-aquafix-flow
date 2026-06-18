@@ -20,8 +20,18 @@ export default {
   	extend: {
   		fontFamily: {
   			clash: [
-  				'Clash Grotesk"',
+  				'Barlow',
   				'Verdana',
+  				'sans-serif'
+  			],
+  			bebas: [
+  				'Bebas Neue',
+  				'Impact',
+  				'sans-serif'
+  			],
+  			barlow: [
+  				'Barlow',
+  				'system-ui',
   				'sans-serif'
   			],
   			sans: [
