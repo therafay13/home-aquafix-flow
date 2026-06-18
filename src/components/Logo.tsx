@@ -38,7 +38,7 @@ const Logo = ({ isDark = false }: { isDark?: boolean }) => {
         </svg>
       </div>
       <div className="flex flex-col leading-none">
-        <span className={`font-bebas tracking-wider text-xl ${textColor}`}>CHESHIRE SPRAY</span>
+        <span className={`font-bebas tracking-wider text-xl ${textColor}`}>CHESHIRE SPRAYING</span>
         <span className="font-bebas tracking-[0.25em] text-[10px] text-tertiary mt-0.5">SPECIALISTS</span>
       </div>
     </div>
