@@ -23,14 +23,14 @@ const FlipButton = ({
 };
 
 const features = [{
-  title: "Grade-A Resources",
-  description: "Significantly contribute to project, service, or organization success and efficiency."
+  title: "Tidy Workspace Ethos",
+  description: "Dust sheets, masking and overspray containment — your home or premises left as clean as we found them."
 }, {
-  title: "24/7 Services",
-  description: "Offer a safety net for emergencies and convenient support for daily needs."
+  title: "Factory-Grade Finishes",
+  description: "Two-pack, water-based and solvent-based systems matched to each surface for a finish that lasts."
 }, {
-  title: "Innovative Devices",
-  description: "Shape modern living, working, and communication in today's society."
+  title: "Any RAL Colour",
+  description: "Bring us a colour code, sample or Pinterest board — we'll match it and spray it."
 }];
 const About = () => {
   return <section id="about" className="py-20 pb-40 relative bg-card">
@@ -39,16 +39,16 @@ const About = () => {
         {/* Right - Content */}
         <div>
           <FadeIn delay={100}>
-            <p className="text-secondary mb-4 font-bold"> Who Choose Us</p>
+            <p className="text-tertiary mb-4 font-bold uppercase tracking-widest text-sm">Why Choose Us</p>
           </FadeIn>
           <FadeIn delay={200}>
             <h2 className="text-primary mb-6 text-5xl">
-              Plumbing Solutions For Your Every Needs
+              Spray Solutions For Every Surface
             </h2>
           </FadeIn>
           <FadeIn delay={300}>
             <p className="text-muted-foreground mb-8 font-semibold">
-              Building client trust through consistently exceptional service and a proven track record of plumbing challenges with expertise.
+              From a single garage door to a full commercial respray, we deliver a hand-finished workshop-quality result with twenty-five years of craftsmanship behind every coat.
             </p>
           </FadeIn>
 
@@ -70,9 +70,9 @@ const About = () => {
           </div>
 
 
-          <Link to="tel:+1578365379">
+          <Link to="tel:+447882395895">
             <FadeIn delay={600}>
-              <FlipButton>Call +(1)578-365-379</FlipButton>
+              <FlipButton>Call 07882 395895</FlipButton>
             </FadeIn>
           </Link>
         </div>
@@ -80,11 +80,11 @@ const About = () => {
         <FadeIn className="h-[90%]">
           <div className="relative h-full">
             <div className="rounded-3xl h-full overflow-hidden">
-              <img src={heroPlumber} alt="Aquafix professional team" className="h-auto w-full object-cover" />
+              <img src={heroPlumber} alt="Spray painter at work on uPVC window" className="h-auto w-full object-cover" />
             </div>
             {/* Experience Badge */}
             <div className="absolute -bottom-12 w-[240px] h-[240px] -left-12 overflow-hidden rounded-xl text-white">
-              <img src={teamPlumber} alt="Aquafix professional team" className="h-full object-cover " />
+              <img src={teamPlumber} alt="Close-up of HVLP spray finish" className="h-full object-cover " />
             </div>
           </div>
         </FadeIn>

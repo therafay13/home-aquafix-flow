@@ -4,29 +4,29 @@ import avatar3 from "@/assets/avatar-3.jpg";
 import FadeIn from "@/components/FadeIn";
 
 const testimonials = [{
-  name: "Esther Steward",
-  location: "San Francisco, CA",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex urna, pretium id nunc vitae, aliquet dignissim nisi. Nullam.",
+  name: "Sarah J.",
+  location: "Chester",
+  text: "Our kitchen looks like a brand-new installation for a fraction of the cost. The team were spotless, on time and the finish is unbelievable.",
   avatar: avatar1
 }, {
-  name: "Bessie Cooper",
-  location: "Chicago, IL",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex urna, pretium id nunc vitae, aliquet dignissim nisi. Nullam.",
+  name: "Mark D.",
+  location: "Ellesmere Port",
+  text: "Had the whole front of the house uPVC sprayed anthracite grey. Done in a day, no mess, and you genuinely can't tell it wasn't factory.",
   avatar: avatar2
 }, {
-  name: "Annette Black",
-  location: "Chicago, IL",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex urna, pretium id nunc vitae, aliquet dignissim nisi. Nullam.",
+  name: "Helen R.",
+  location: "Neston",
+  text: "Fitted wardrobes resprayed in matte black — the bedroom feels completely transformed. Polite, tidy and brilliant attention to detail.",
   avatar: avatar3
 }, {
-  name: "Marvin Howard",
-  location: "Chicago, IL",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex urna, pretium id nunc vitae, aliquet dignissim nisi. Nullam.",
+  name: "Tom B.",
+  location: "Wirral",
+  text: "Garage door looked twenty years old; now it looks better than the day it was fitted. Booked them again for the soffits already.",
   avatar: avatar1
 }, {
-  name: "Marvin McKinney",
-  location: "San Francisco, CA",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex urna, pretium id nunc vitae, aliquet dignissim nisi. Nullam.",
+  name: "Pinnacle Retail Ltd.",
+  location: "Cheshire Oaks",
+  text: "Resprayed two shop fronts out of hours so we didn't lose a single trading hour. Faultless from quote to completion.",
   avatar: avatar2
 }];
 
@@ -55,19 +55,19 @@ const Testimonials = () => {
       <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-12">
         <div>
           <FadeIn>
-            <p className="text-tertiary font-medium mb-4">TESTIMONIAL</p>
+            <p className="text-tertiary font-medium mb-4 uppercase tracking-widest text-sm">Testimonials</p>
           </FadeIn>
           <FadeIn delay={100}>
             <h2 className="text-white">
-              Featured
+              What Cheshire
               <br />
-              Completed Works
+              Customers Say
             </h2>
           </FadeIn>
         </div>
         <FadeIn delay={200}>
           <p className="text-white max-w-xl mt-6 lg:mt-0">
-            Explore our portfolio to see the high-quality plumbing projects we've completed. From emergency repairs to full-scale installations, our work demonstrates our commitment to excellence and customer satisfaction.
+            Homeowners and businesses across Cheshire, Wirral and Ellesmere Port choose us because we treat every spray job — large or small — with the same workshop-grade care.
           </p>
         </FadeIn>
       </div>

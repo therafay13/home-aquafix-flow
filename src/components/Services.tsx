@@ -28,20 +28,20 @@ const Services = () => {
         {/* Left Column - Sticky */}
         <div className="lg:sticky lg:top-32">
           <FadeIn>
-            <p className="text-primary font-bold mb-4">Our Services</p>
+            <p className="text-tertiary font-bold mb-4 uppercase tracking-widest text-sm">Our Services</p>
           </FadeIn>
           <FadeIn delay={100}>
             <h2 className="text-black mb-6 text-6xl">
               <span className="relative inline-block">
-                <span className="relative z-10">Ensuring Reliable</span>
+                <span className="relative z-10">Specialist Spray</span>
               </span>
               <br />
-              Plumbing Solutions
+              Finishes
             </h2>
           </FadeIn>
           <FadeIn delay={200}>
             <p className="text-muted-foreground mb-8 max-w-md text-base">
-              We specialize in providing high-quality plumbing solutions for your home or business. Our experienced team is committed to resolving all your plumbing issues, ensuring your complete satisfaction with every job.
+              From kitchen cabinets to commercial shop fronts, we deliver a flawless sprayed finish on almost any surface — domestic, commercial or industrial — across Cheshire and Ellesmere Port.
             </p>
           </FadeIn>
 
