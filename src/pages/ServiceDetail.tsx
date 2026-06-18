@@ -19,7 +19,7 @@ import faucetRepair from "@/assets/faucet-repair.jpg";
 import heroGrid1 from "@/assets/hero-grid-1.jpg";
 import heroGrid2 from "@/assets/hero-grid-2.jpg";
 import heroGrid3 from "@/assets/hero-grid-3.jpg";
-import plumberTeam from "@/assets/plumber-team.jpg";
+import sprayTeamImage from "@/assets/plumber-team.jpg";
 import { useAuth } from "@/hooks/useAuth";
 import { useUserProfile } from "@/hooks/useUserProfile";
 
@@ -411,7 +411,7 @@ const ServiceDetail = () => {
                     <FadeIn delay={200}>
                       <div className="rounded-xl overflow-hidden">
                         <img
-                          src={plumberTeam}
+                          src={sprayTeamImage}
                           alt="Service Benefits"
                           className="w-full h-[400px] object-cover"
                         />

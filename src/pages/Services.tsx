@@ -20,9 +20,9 @@ const Services = () => {
 
         {/* Header */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          <h1 className="text-black text-7xl font-bold">Our Service</h1>
+          <h1 className="text-black text-7xl font-bold">Our Spray Services</h1>
           <p className="text-muted-foreground text-lg lg:pt-4">
-            We offer experienced technicians quickly identify the source of leaks and provide effective solutions to restore your plumbing system.
+            Domestic, commercial and industrial spray painting across Cheshire and Ellesmere Port — every surface masked, prepped and finished to a factory standard.
           </p>
         </div>
 

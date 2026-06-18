@@ -4,19 +4,19 @@ import FadeIn from "@/components/FadeIn";
 import { Link } from "react-router-dom";
 
 const stats = [{
-  number: 18,
+  number: 25,
   suffix: "+",
   label: "Year Experience",
   decimals: 0
 }, {
-  number: 4.3,
-  suffix: "k",
-  label: "Happy Clients",
+  number: 1.2,
+  suffix: "k+",
+  label: "Projects Sprayed",
   decimals: 1
 }, {
-  number: 25,
-  suffix: "+",
-  label: "Qualified Experts",
+  number: 100,
+  suffix: "%",
+  label: "Cheshire-Based",
   decimals: 0
 }];
 
@@ -44,11 +44,11 @@ const Experience = () => {
       {/* Top Text */}
       <div className="text-center max-w-5xl mx-auto mb-16">
         <FadeIn>
-          <p className="text-primary font-bold  mb-4">Welcome to Aquafix</p>
+          <p className="text-tertiary font-bold mb-4 uppercase tracking-widest text-sm">Welcome to Cheshire Spray Specialists</p>
         </FadeIn>
         <FadeIn delay={100}>
           <h2 className="text-black font-bold text-5xl">
-            With years of industry experience, our team of skilled professionals is dedicated to providing top-notch solutions.
+            Twenty-five years of spraying kitchens, uPVC and industrial coatings across Cheshire — without ever leaving a mess behind.
           </h2>
         </FadeIn>
       </div>
@@ -59,7 +59,7 @@ const Experience = () => {
         <FadeIn delay={200}>
           <div className="relative">
             <div className="rounded-3xl overflow-hidden max-h-[500px]">
-              <img src={plumberTeam} alt="Aquafix plumber with customer" className="w-full h-auto object-cover" />
+              <img src={plumberTeam} alt="Cheshire Spray Specialists team in spray booth" className="w-full h-auto object-cover" />
             </div>
           </div>
         </FadeIn>
@@ -68,12 +68,12 @@ const Experience = () => {
         <div>
           <FadeIn delay={300}>
             <h3 className="text-black font-bold mb-6">
-              We focus on customer satisfaction and quality
+              Craftsmanship, containment and a finish that lasts
             </h3>
           </FadeIn>
           <FadeIn delay={400}>
             <p className="text-muted-foreground mb-8">
-              Our team of skilled professionals is dedicated to providing top-notch solutions and exceptional customer service. Our commitment to quality workmanship, ensuring that every job is done right the first time.
+              Born out of a uPVC fabrication background, we bring factory standards to every kitchen, window frame and steel section we touch. Tidy, masked, sprayed and signed off — first time.
             </p>
           </FadeIn>
 

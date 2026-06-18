@@ -14,40 +14,40 @@ import work6 from "@/assets/work-6.png";
 
 const works = [
   {
-    slug: "bathroom-repair",
+    slug: "kitchen-respray-chester",
     image: work1,
-    title: "Bathroom Repair",
-    description: "Complete bathroom renovation including new fixtures, modern plumbing installation, and water-efficient upgrades. Transformed an outdated space into a contemporary oasis."
+    title: "Chester Kitchen Respray",
+    description: "Tired oak shaker kitchen in Chester stripped, primed and resprayed in matte charcoal with new brass hardware. Sprayed over three days with zero disruption to the family."
   },
   {
-    slug: "kitchen-repair",
+    slug: "upvc-front-elevation",
     image: work2,
-    title: "Kitchen Repair",
-    description: "Full kitchen plumbing overhaul featuring new sink installation, dishwasher connection, and garbage disposal setup. Enhanced functionality and water efficiency."
+    title: "uPVC Front Elevation — Ellesmere Port",
+    description: "Whole front elevation of white uPVC windows and composite door sprayed anthracite grey on-site, masked end-to-end and finished in a single day."
   },
   {
-    slug: "plumbing-installation",
+    slug: "garage-door-satin-black",
     image: work3,
-    title: "Plumbing Installation",
-    description: "Professional pipe installation and fixture mounting for a new residential property. Ensured proper water pressure and drainage throughout the home."
+    title: "Garage Door — Satin Black",
+    description: "Up-and-over garage door brought back to showroom condition without removal. Two-pack satin black finish, sprayed in-situ on a quiet residential driveway."
   },
   {
-    slug: "sewer-cleaning",
+    slug: "fascias-soffits-refresh",
     image: work4,
-    title: "Sewer Cleaning",
-    description: "Deep sewer line cleaning and maintenance service. Removed years of buildup to restore optimal flow and prevent future blockages."
+    title: "Fascias, Soffits & Downpipes",
+    description: "Weather-worn fascias and downpipes on a 1990s detached home restored to crisp white and matt black — a fraction of the cost of replacement uPVC."
   },
   {
-    slug: "commercial-renovation",
+    slug: "industrial-steelwork-coating",
     image: work5,
-    title: "Commercial Renovation",
-    description: "Large-scale commercial plumbing project for a restaurant. Installed industrial-grade equipment and ensured compliance with health regulations."
+    title: "Industrial Steel Coating",
+    description: "Internal warehouse steelwork prepped and coated with a hard-wearing protective finish. Completed across two shifts to keep the unit operational."
   },
   {
-    slug: "emergency-repair",
+    slug: "shop-front-respray",
     image: work6,
-    title: "Emergency Repair",
-    description: "24/7 emergency response for a burst pipe. Quick action prevented significant water damage and restored service within hours."
+    title: "Cheshire Oaks Shop Front",
+    description: "Retail unit resprayed out of hours so the client didn't lose a single trading hour. Charcoal frame with ember orange brand accents."
   }
 ];
 
@@ -68,9 +68,9 @@ const Work = () => {
 
           {/* Header */}
           <div className="flex max-md:flex-col gap-8 mb-16 justify-between">
-            <h1 className="text-black text-7xl font-bold">Completed Works</h1>
+            <h1 className="text-black text-7xl font-bold">Recent Spray Projects</h1>
             <p className="text-muted-foreground max-w-[468px] text-lg font-medium lg:pt-4">
-              Expert Plumbing Solutions Tailored to Fulfill Your Home Repair and Maintenance Needs
+              A selection of recent kitchens, uPVC, garage doors and commercial work sprayed across Cheshire, Ellesmere Port and the Wirral.
             </p>
           </div>
 

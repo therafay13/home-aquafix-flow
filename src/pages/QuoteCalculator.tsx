@@ -156,12 +156,12 @@ const QuoteCalculator = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Get Your Free Estimate
+              Get Your Free Spray Estimate
             </h1>
 
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Use our quote calculator to get an instant estimate for your plumbing needs.
-              Select your service, complexity level, and get a price range in seconds.
+              Pick the surface, the size of the job and how urgent it is — we'll give you an
+              instant ballpark for your spray project anywhere in Cheshire & Ellesmere Port.
             </p>
           </FadeIn>
         </div>

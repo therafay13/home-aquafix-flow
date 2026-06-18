@@ -1,6 +1,6 @@
 import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import { Facebook, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 const FlipButton = ({
   children
@@ -39,8 +39,8 @@ const footerLinks = {
     name: "About Us",
     href: "/about"
   }, {
-    name: "Our Team",
-    href: "/about"
+    name: "Our Work",
+    href: "/work"
   }, {
     name: "Careers",
     href: "/career"
@@ -49,17 +49,17 @@ const footerLinks = {
     href: "/contact"
   }],
   services: [{
-    name: "Plumbing",
-    href: "/services"
+    name: "Kitchen Resprays",
+    href: "/services/kitchen-resprays"
   }, {
-    name: "Faucet Repairs",
-    href: "/services/faucet-leak-repairs"
+    name: "uPVC Spraying",
+    href: "/services/upvc-windows-doors"
   }, {
-    name: "Installation",
-    href: "/services"
+    name: "Garage Doors",
+    href: "/services/garage-door-respray"
   }, {
-    name: "Maintenance",
-    href: "/services"
+    name: "Commercial",
+    href: "/services/shop-fronts-commercial"
   }],
   resources: [{
     name: "Blog",
@@ -74,19 +74,10 @@ const footerLinks = {
 };
 const socialLinks = [{
   icon: Facebook,
-  href: "#"
-}, {
-  icon: Twitter,
-  href: "#"
-}, {
-  icon: Instagram,
-  href: "#"
-}, {
-  icon: Linkedin,
-  href: "#"
+  href: "https://www.facebook.com/"
 }];
 const Footer = () => {
-  return <footer className="bg-[#0c133b] pt-16 pb-8">
+  return <footer className="bg-primary pt-16 pb-8">
     <div className="container-custom section-padding">
       {/* Top Section */}
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
@@ -94,7 +85,7 @@ const Footer = () => {
         <div className="lg:col-span-2">
           <Logo isDark />
           <p className="text-white/60 mt-4 mb-6 max-w-sm">
-            Professional plumbing services you can trust. Available 24/7 for all your plumbing needs.
+            Specialist spray painting across Cheshire and Ellesmere Port — kitchens, uPVC, garage doors and commercial coatings, finished to a factory standard.
           </p>
 
           {/* Social Links */}
@@ -105,8 +96,8 @@ const Footer = () => {
           </div>
 
           <div className="mt-6">
-            <Link to="tel:+1578365379">
-              <FlipButton>Call +(1)578-365-379</FlipButton>
+            <Link to="tel:+447882395895">
+              <FlipButton>Call 07882 395895</FlipButton>
             </Link>
           </div>
         </div>
@@ -137,18 +128,21 @@ const Footer = () => {
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
               <Phone className="h-5 w-5 text-tertiary flex-shrink-0 mt-0.5" />
-              <a href="tel:(111)222-333-444" className="text-white/60 text-sm">(111) 222-333-444</a>
+              <div className="flex flex-col gap-1">
+                <a href="tel:+447882395895" className="text-white/60 text-sm">07882 395895</a>
+                <a href="tel:+447746476414" className="text-white/60 text-sm">07746 476414</a>
+              </div>
             </li>
             <li className="flex items-start gap-3">
               <Mail className="h-5 w-5 text-tertiary flex-shrink-0 mt-0.5" />
-              <a href="mailto:info@aquafix.com" className="text-white/60 text-sm">info@aquafix.com</a>
+              <a href="mailto:cheshiresprayingspecialists@gmail.com" className="text-white/60 text-sm break-all">cheshiresprayingspecialists@gmail.com</a>
             </li>
             <li className="flex items-start gap-3">
               <MapPin className="h-5 w-5 text-tertiary flex-shrink-0 mt-0.5" />
-              <a href="https://www.google.com/maps/place/123+Main+Street,+New+York,+NY+10001" className="text-white/60 text-sm" target="_blank" rel="noopener noreferrer">
-                123 Main Street,
+              <a href="https://www.google.com/maps?q=Ellesmere+Port+UK" className="text-white/60 text-sm" target="_blank" rel="noopener noreferrer">
+                Ellesmere Port,
                 <br />
-                New York, NY 10001
+                Serving all of Cheshire
               </a>
             </li>
           </ul>
@@ -159,7 +153,7 @@ const Footer = () => {
       <div className="border-t border-white/10 pt-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-sm">
-            © {new Date().getFullYear()} Aquafix. All rights reserved. Designed by Lovable.
+            © {new Date().getFullYear()} Cheshire Spray Specialists. All rights reserved.
           </p>
           <div className="flex gap-6">
             {footerLinks.resources.slice(2).map(link => <a key={link.name} href={link.href} className="text-white/40 hover:text-white transition-colors text-sm">

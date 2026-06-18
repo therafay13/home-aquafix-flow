@@ -201,10 +201,10 @@ const Header = ({
         </nav>
         <div className="hidden lg:flex gap-3">
           {/* CTA Button & Cart */}
-          <Link to="tel:+111222333444" className="hidden lg:flex">
+          <Link to="tel:+447882395895" className="hidden lg:flex">
             <FlipButton isDark={isDark}>
               <Phone className="h-4 w-4" />
-              Call +(111)222-333-444</FlipButton>
+              Call 07882 395895</FlipButton>
           </Link>
           <div className="hidden grow items-center justify-end gap-6 lg:flex">
             {!user ? (
@@ -357,7 +357,7 @@ const Header = ({
           </a>)}
           <Button variant="hero" size="default" className="mt-4">
             <Phone className="h-4 w-4 mr-2" />
-            Call +(1)578-365-379
+            Call 07882 395895
           </Button>
         </nav>
       </div>}

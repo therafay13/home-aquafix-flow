@@ -33,28 +33,28 @@ const FlipButton = ({
 const Hero = () => {
   const leftColumnImages = [{
     src: heroGrid1,
-    alt: "Plumber fixing kitchen sink",
+    alt: "Spray painter applying matte finish to kitchen cabinet door",
     className: "rounded-2xl"
   }, {
     src: heroGrid3,
-    alt: "Plumber with tools",
+    alt: "Spray painter in PPE inside spray booth",
     className: "rounded-full"
   }, {
     src: heroGrid5,
-    alt: "Under sink repair",
+    alt: "HVLP spray gun atomising ember-coloured paint",
     className: "rounded-2xl"
   }];
   const rightColumnImages = [{
     src: heroGrid2,
-    alt: "Female plumber with pipes",
+    alt: "Freshly resprayed anthracite uPVC window frame",
     className: "rounded-full"
   }, {
     src: heroGrid4,
-    alt: "Worker with wrench",
+    alt: "Resprayed charcoal garage door on a UK home",
     className: "rounded-2xl"
   }, {
     src: heroGrid6,
-    alt: "Female plumber working",
+    alt: "Painter masking uPVC fascias and soffits on-site",
     className: "rounded-full"
   }];
   return <section className="relative bg-primary overflow-hidden">
@@ -65,20 +65,20 @@ const Hero = () => {
         <div className="max-w-7xl lg:min-w-[700px] relative z-10">
           <div className="animate-fade-up">
             <h1 className="text-white font-bold mb-6 text-5xl md:text-6xl lg:text-7xl leading-[1.1] max-w-[800px] text-left xl:text-7xl">
-              Top-Notch Plumbing
+              Spray Painting Specialists
               <br />
-              & Repair Solutions,
+              Cheshire &amp; Ellesmere Port,
               <br />
-              <span className="text-tertiary">Quality Work.</span>
+              <span className="text-tertiary">Reborn, Not Replaced.</span>
             </h1>
           </div>
 
           <p style={{
             animationDelay: "0.1s"
           }} className="text-white text-lg mb-8 max-w-[800px] animate-fade-up md:text-base">
-            We take pride in providing exceptional plumbing services with a focus on quality and
-            reliability. From routine maintenance to emergency repairs and comprehensive
-            installations, we've got you covered.
+            Kitchen resprays, uPVC windows and doors, fascias, garage doors and commercial
+            coatings — flawless factory-grade finishes applied on-site or in our workshop
+            for a fraction of the cost of replacement.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 mb-12 animate-fade-up" style={{
@@ -104,13 +104,13 @@ const Hero = () => {
                 <img src={avatar2} alt="Client 2" className="w-12 h-12 rounded-full border-2 border-secondary object-cover" />
                 <img src={avatar3} alt="Client 3" className="w-12 h-12 rounded-full border-2 border-secondary object-cover" />
                 <div className="w-12 h-12 rounded-full bg-tertiary flex items-center justify-center text-primary text-sm font-bold border-2 border-secondary">
-                  4.3k
+                  1.2k
                 </div>
               </div>
             </div>
             <div>
-              <p className="text-white font-bold text-xl">4,300+</p>
-              <p className="text-white/60 text-sm">Satisfied Clients</p>
+              <p className="text-white font-bold text-xl">1,200+</p>
+              <p className="text-white/60 text-sm">Projects Sprayed Across Cheshire</p>
             </div>
           </div>
         </div>

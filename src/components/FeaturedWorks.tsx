@@ -1,25 +1,25 @@
-import completedBathroom from "@/assets/completed-bathroom.jpg";
-import completedKitchen from "@/assets/completed-kitchen.jpg";
-import drainCleaning from "@/assets/drain-cleaning.jpg";
+import workKitchen from "@/assets/work-1.png";
+import workUpvc from "@/assets/work-2.png";
+import workGarage from "@/assets/work-3.png";
 import FadeIn from "@/components/FadeIn";
 import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 
 const projects = [
   {
-    title: "Bathroom Repair",
-    description: "Complete bathroom renovation with modern fixtures and plumbing upgrades.",
-    image: completedBathroom,
+    title: "Kitchen Respray",
+    description: "Tired oak kitchen brought back to life in deep matte charcoal with brass hardware.",
+    image: workKitchen,
   },
   {
-    title: "Kitchen Installation",
-    description: "New kitchen plumbing installation with water filtration system.",
-    image: completedKitchen,
+    title: "uPVC Transformation",
+    description: "Full elevation of white uPVC sprayed to anthracite grey on-site in a single day.",
+    image: workUpvc,
   },
   {
-    title: "Drain Service",
-    description: "Professional drain cleaning and repair service.",
-    image: drainCleaning,
+    title: "Garage Door Respray",
+    description: "Up-and-over door stripped, primed and finished in satin black — without removal.",
+    image: workGarage,
   },
 ];
 
@@ -42,19 +42,19 @@ const FeaturedWorks = () => {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-12">
           <div>
             <FadeIn>
-              <p className="text-tertiary font-medium mb-4">OUR PORTFOLIO</p>
+              <p className="text-tertiary font-medium mb-4 uppercase tracking-widest text-sm">Our Portfolio</p>
             </FadeIn>
             <FadeIn delay={100}>
               <h2 className="text-white">
-                Featured
+                Recent Projects
                 <br />
-                Completed Works
+                Across Cheshire
               </h2>
             </FadeIn>
           </div>
           <FadeIn delay={200}>
             <p className="text-white max-w-xl mt-6 lg:mt-0">
-              Explore our portfolio to see the high-quality plumbing projects we've completed. From emergency repairs to full-scale installations, our work demonstrates our commitment to excellence and customer satisfaction.
+              Kitchens, uPVC, garage doors, fascias and industrial steelwork — a small selection of recent jobs sprayed across Cheshire and Ellesmere Port. Every project finished on time and on budget.
             </p>
           </FadeIn>
         </div>
