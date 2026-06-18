@@ -104,7 +104,7 @@ const Hero = () => {
                 <img src={avatar2} alt="Client 2" className="w-12 h-12 rounded-full border-2 border-secondary object-cover" />
                 <img src={avatar3} alt="Client 3" className="w-12 h-12 rounded-full border-2 border-secondary object-cover" />
                 <div className="w-12 h-12 rounded-full bg-tertiary flex items-center justify-center text-primary text-sm font-bold border-2 border-secondary">
-                  4.3k
+                  1.2k
                 </div>
               </div>
             </div>
