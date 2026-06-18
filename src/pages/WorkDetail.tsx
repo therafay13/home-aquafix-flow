@@ -39,7 +39,7 @@ const worksData: Record<string, {
   "bathroom-repair": {
     image: completedBathroom,
     title: "Bathroom Repair",
-    description: "Complete bathroom renovation including new fixtures, modern plumbing installation, and water-efficient upgrades. Transformed an outdated space into a contemporary oasis.",
+    description: "Complete bathroom renovation including new fixtures, modern spraying installation, and water-efficient upgrades. Transformed an outdated space into a contemporary oasis.",
     detailTitle: "Revitalized Bathroom with Expert Repairs",
     detailDescription: "At mas viverra adipiscing at in tellus integer feugiat. Nibh praesent fusce id velit ut tortor. Sagittis id in a codnegue qoura semper eget. At lectus eros duis convallis. Proin odio semper et velit felis eget. Naque blandit!",
     overview: [
@@ -59,14 +59,14 @@ const worksData: Record<string, {
       { number: "04", title: "Works Completed", description: "Amet cras vulputate in mi elit dapibus. Et odio facilisi posuere eros sem facilisi eget et enim." }
     ],
     problems: ["Exceeding customer expectations with exceptional service and personalized care.", "Upholding honesty and transparency in all our interactions and business practices.", "Continuously adopting new technologies and methods to improve our services."],
-    solutions: ["Implemented cutting-edge plumbing solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
+    solutions: ["Implemented cutting-edge spraying solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
   },
   "kitchen-repair": {
     image: completedKitchen,
     title: "Kitchen Repair",
-    description: "Full kitchen plumbing overhaul featuring new sink installation, dishwasher connection, and garbage disposal setup. Enhanced functionality and water efficiency.",
-    detailTitle: "Modern Kitchen Plumbing Excellence",
-    detailDescription: "Complete transformation of the kitchen plumbing system with state-of-the-art fixtures and efficient water management solutions. Our expert team delivered exceptional results.",
+    description: "Full kitchen spraying overhaul featuring new sink installation, dishwasher connection, and garbage disposal setup. Enhanced functionality and water efficiency.",
+    detailTitle: "Modern Kitchen Spraying Excellence",
+    detailDescription: "Complete transformation of the kitchen spraying system with state-of-the-art fixtures and efficient water management solutions. Our expert team delivered exceptional results.",
     overview: [
       "Complete sink and faucet replacement with modern fixtures",
       "Dishwasher connection and drainage optimization",
@@ -74,7 +74,7 @@ const worksData: Record<string, {
     ],
     client: "Home Solutions Inc",
     budget: "$450.00",
-    services: "Kitchen Plumbing",
+    services: "Kitchen Spraying",
     location: "1542 Oak Street, California 94102",
     date: "January 15, 2026",
     workSteps: [
@@ -84,14 +84,14 @@ const worksData: Record<string, {
       { number: "04", title: "Works Completed", description: "Amet cras vulputate in mi elit dapibus. Et odio facilisi posuere eros sem facilisi eget et enim." }
     ],
     problems: ["Exceeding customer expectations with exceptional service and personalized care.", "Upholding honesty and transparency in all our interactions and business practices.", "Continuously adopting new technologies and methods to improve our services."],
-    solutions: ["Implemented cutting-edge plumbing solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
+    solutions: ["Implemented cutting-edge spraying solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
   },
-  "plumbing-installation": {
+  "spraying-installation": {
     image: faucetRepair,
-    title: "Plumbing Installation",
+    title: "Spraying Installation",
     description: "Professional pipe installation and fixture mounting for a new residential property. Ensured proper water pressure and drainage throughout the home.",
-    detailTitle: "Complete Residential Plumbing Setup",
-    detailDescription: "Full-scale plumbing installation for a newly constructed residential property, ensuring optimal water pressure and efficient drainage systems throughout the entire home.",
+    detailTitle: "Complete Residential Spraying Setup",
+    detailDescription: "Full-scale spraying installation for a newly constructed residential property, ensuring optimal water pressure and efficient drainage systems throughout the entire home.",
     overview: [
       "Main water line installation and pressure optimization",
       "Complete bathroom and kitchen fixture mounting",
@@ -109,7 +109,7 @@ const worksData: Record<string, {
       { number: "04", title: "Works Completed", description: "Amet cras vulputate in mi elit dapibus. Et odio facilisi posuere eros sem facilisi eget et enim." }
     ],
     problems: ["Exceeding customer expectations with exceptional service and personalized care.", "Upholding honesty and transparency in all our interactions and business practices.", "Continuously adopting new technologies and methods to improve our services."],
-    solutions: ["Implemented cutting-edge plumbing solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
+    solutions: ["Implemented cutting-edge spraying solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
   },
   "sewer-cleaning": {
     image: drainCleaning,
@@ -134,14 +134,14 @@ const worksData: Record<string, {
       { number: "04", title: "Works Completed", description: "Amet cras vulputate in mi elit dapibus. Et odio facilisi posuere eros sem facilisi eget et enim." }
     ],
     problems: ["Exceeding customer expectations with exceptional service and personalized care.", "Upholding honesty and transparency in all our interactions and business practices.", "Continuously adopting new technologies and methods to improve our services."],
-    solutions: ["Implemented cutting-edge plumbing solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
+    solutions: ["Implemented cutting-edge spraying solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
   },
   "commercial-renovation": {
     image: bathroomRemodel,
     title: "Commercial Renovation",
-    description: "Large-scale commercial plumbing project for a restaurant. Installed industrial-grade equipment and ensured compliance with health regulations.",
-    detailTitle: "Restaurant Plumbing Compliance Project",
-    detailDescription: "Complete commercial plumbing renovation for a high-volume restaurant, including industrial-grade equipment installation and full compliance with local health and safety regulations.",
+    description: "Large-scale commercial spraying project for a restaurant. Installed industrial-grade equipment and ensured compliance with health regulations.",
+    detailTitle: "Restaurant Spraying Compliance Project",
+    detailDescription: "Complete commercial spraying renovation for a high-volume restaurant, including industrial-grade equipment installation and full compliance with local health and safety regulations.",
     overview: [
       "Industrial dishwasher and grease trap installation",
       "Health code compliant drainage system setup",
@@ -149,7 +149,7 @@ const worksData: Record<string, {
     ],
     client: "Gourmet Dining Group",
     budget: "$3,500.00",
-    services: "Commercial Plumbing",
+    services: "Commercial Spraying",
     location: "555 Restaurant Row, California 92101",
     date: "October 5, 2025",
     workSteps: [
@@ -159,7 +159,7 @@ const worksData: Record<string, {
       { number: "04", title: "Works Completed", description: "Amet cras vulputate in mi elit dapibus. Et odio facilisi posuere eros sem facilisi eget et enim." }
     ],
     problems: ["Exceeding customer expectations with exceptional service and personalized care.", "Upholding honesty and transparency in all our interactions and business practices.", "Continuously adopting new technologies and methods to improve our services."],
-    solutions: ["Implemented cutting-edge plumbing solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
+    solutions: ["Implemented cutting-edge spraying solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
   },
   "emergency-repair": {
     image: heroGrid1,
@@ -184,7 +184,7 @@ const worksData: Record<string, {
       { number: "04", title: "Works Completed", description: "Amet cras vulputate in mi elit dapibus. Et odio facilisi posuere eros sem facilisi eget et enim." }
     ],
     problems: ["Exceeding customer expectations with exceptional service and personalized care.", "Upholding honesty and transparency in all our interactions and business practices.", "Continuously adopting new technologies and methods to improve our services."],
-    solutions: ["Implemented cutting-edge plumbing solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
+    solutions: ["Implemented cutting-edge spraying solutions to enhance efficiency and reliability.", "Provided comprehensive maintenance plans to ensure long-term performance.", "Utilized eco-friendly materials and practices to promote sustainability."]
   },
 };
 
@@ -446,11 +446,11 @@ const WorkDetail = () => {
                 <FadeIn className="h-[90%]">
                   <div className="relative h-full">
                     <div className="rounded-3xl h-full overflow-hidden">
-                      <img src={problem1} alt="Aquafix professional team" className="h-full object-cover" />
+                      <img src={problem1} alt="Cheshire Spray Specialists professional team" className="h-full object-cover" />
                     </div>
                     {/* Experience Badge */}
                     <div className="absolute -bottom-12 w-[240px] h-[240px] -left-12 border-8 border-white overflow-hidden rounded-xl text-white">
-                      <img src={problem2} alt="Aquafix professional team" className="h-full object-cover " />
+                      <img src={problem2} alt="Cheshire Spray Specialists professional team" className="h-full object-cover " />
                     </div>
                   </div>
                 </FadeIn>
@@ -463,11 +463,11 @@ const WorkDetail = () => {
                 <FadeIn>
                   <div className="relative">
                     <div className="rounded-3xl overflow-hidden">
-                      <img src={solution1} alt="Aquafix professional team" className="w-full h-auto object-cover" />
+                      <img src={solution1} alt="Cheshire Spray Specialists professional team" className="w-full h-auto object-cover" />
                     </div>
                     {/* Experience Badge */}
                     <div className="absolute -bottom-12 w-[240px] h-[240px] -right-12 border-8 border-white overflow-hidden rounded-xl text-white">
-                      <img src={solution2} alt="Aquafix professional team" className="h-full object-cover " />
+                      <img src={solution2} alt="Cheshire Spray Specialists professional team" className="h-full object-cover " />
                     </div>
                   </div>
                 </FadeIn>

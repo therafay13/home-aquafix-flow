@@ -1,4 +1,4 @@
-import heroPlumber from "@/assets/hero-plumber.jpg";
+import heroSpray Painter from "@/assets/hero-spray painter.jpg";
 import FadeIn from "@/components/FadeIn";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -175,7 +175,7 @@ const Career = () => {
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
               Join our team and make a difference. We're looking for passionate
-              individuals who are ready to grow their career in the plumbing
+              individuals who are ready to grow their career in the spraying
               industry.
             </p>
             <a
@@ -199,7 +199,7 @@ const Career = () => {
                 {/* Hero Image */}
                 <div className="rounded-2xl overflow-hidden mb-12">
                   <img
-                    src={heroPlumber}
+                    src={heroSpray Painter}
                     alt={job.title}
                     className="w-full h-[300px] md:h-[400px] object-cover"
                   />

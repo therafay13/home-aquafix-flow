@@ -1,4 +1,4 @@
-import plumberTeam from "@/assets/plumber-team.jpg";
+import spray painterTeam from "@/assets/spray painter-team.jpg";
 import CTA from "@/components/CTA";
 import FadeIn from "@/components/FadeIn";
 import Footer from "@/components/Footer";
@@ -7,7 +7,7 @@ import { usePublishedBlogs } from "@/hooks/useBlogs";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
-const categories = ["All", "Latest", "Popular", "Plumbing Tips", "Tips & Tricks"];
+const categories = ["All", "Latest", "Popular", "Spraying Tips", "Tips & Tricks"];
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const { data: blogs, isLoading } = usePublishedBlogs();
@@ -55,7 +55,7 @@ const Blog = () => {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-12">
             <h1 className="text-black font-bold">Our Latest Blogs</h1>
             <p className="text-muted-foreground max-w-lg font-medium ">
-              Stay informed with our latest insights, tips, and updates on plumbing trends and solutions. Dive into expert advice and discover how to maintain your plumbing systems.
+              Stay informed with our latest insights, tips, and updates on spraying trends and solutions. Dive into expert advice and discover how to maintain your spraying systems.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ const Blog = () => {
               <div className="bg-[#F4F4F7] rounded-3xl overflow-hidden">
                 <div className="grid lg:grid-cols-2 gap-12">
                   <div className="relative pl-12 py-10">
-                    <img src={featuredPost.image_url || plumberTeam} alt={featuredPost.title} className="w-full h-[420px] object-cover rounded-2xl" />
+                    <img src={featuredPost.image_url || spray painterTeam} alt={featuredPost.title} className="w-full h-[420px] object-cover rounded-2xl" />
                     <span className="absolute top-16 left-16 bg-tertiary text-primary text-sm font-medium px-4 py-1 rounded-full">
                       {featuredPost.category}
                     </span>
@@ -105,7 +105,7 @@ const Blog = () => {
               <Link to={`/blog/${post.slug}`}>
                 <article className="group cursor-pointer bg-inherit">
                   <div className="relative rounded-2xl overflow-hidden mb-4">
-                    <img src={post.image_url || plumberTeam} alt={post.title} className="w-full h-[340px] object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={post.image_url || spray painterTeam} alt={post.title} className="w-full h-[340px] object-cover group-hover:scale-105 transition-transform duration-500" />
                     <span className="absolute top-4 left-4 bg-tertiary text-primary text-xs font-medium px-3 py-1 rounded-full">
                       {post.category}
                     </span>

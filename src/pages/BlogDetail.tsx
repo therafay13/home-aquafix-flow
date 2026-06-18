@@ -1,5 +1,5 @@
 import heroGrid2 from "@/assets/hero-grid-2.jpg";
-import plumberTeam from "@/assets/plumber-team.jpg";
+import spray painterTeam from "@/assets/spray painter-team.jpg";
 import CTA from "@/components/CTA";
 import FadeIn from "@/components/FadeIn";
 import Footer from "@/components/Footer";
@@ -71,7 +71,7 @@ const BlogDetail = () => {
             {/* Main Image */}
             <div className="rounded-3xl overflow-hidden mb-8">
               <img
-                src={post.image_url || plumberTeam}
+                src={post.image_url || spray painterTeam}
                 alt={post.title}
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />
@@ -106,7 +106,7 @@ const BlogDetail = () => {
                     As water heaters age, they become more prone to leaks and other malfunctions. Repairing an old water heater can become increasingly expensive, and these costs can add up quickly. By replacing your water heater before it fails, you can avoid the expense of frequent repairs.
                   </p>
                   <ul className="list-disc pl-6 text-muted-foreground mb-8 space-y-2">
-                    <li>Regular maintenance can extend the life of your plumbing systems.</li>
+                    <li>Regular maintenance can extend the life of your spraying systems.</li>
                     <li>Early detection of issues can save you money on repairs.</li>
                     <li>Professional inspections ensure everything is working properly.</li>
                   </ul>
@@ -120,7 +120,7 @@ const BlogDetail = () => {
                     <div>
                       <h4 className="text-primary mb-4">Increase Home Value</h4>
                       <p className="text-muted-foreground mb-4 leading-relaxed">
-                        A well-maintained plumbing system can increase your home's value and appeal to potential buyers.
+                        A well-maintained spraying system can increase your home's value and appeal to potential buyers.
                       </p>
                       <p className="text-muted-foreground leading-relaxed">
                         Modern fixtures and efficient systems are attractive features that can set your property apart.
@@ -129,7 +129,7 @@ const BlogDetail = () => {
                     <div className="rounded-2xl overflow-hidden">
                       <img
                         src={heroGrid2}
-                        alt="Plumber at work"
+                        alt="Spray Painter at work"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -171,7 +171,7 @@ const BlogDetail = () => {
                       <article className="group cursor-pointer bg-inherit">
                         <div className="relative rounded-2xl overflow-hidden mb-4">
                           <img
-                            src={relatedPost.image_url || plumberTeam}
+                            src={relatedPost.image_url || spray painterTeam}
                             alt={relatedPost.title}
                             className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                           />

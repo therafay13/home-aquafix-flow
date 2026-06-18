@@ -116,17 +116,17 @@ const faqs = [
   {
     question: "What types of services do you offer?",
     answer:
-      "We offer a wide range of plumbing services including pipe repair, drain cleaning, water heater installation, bathroom remodeling, gas line repair, and emergency plumbing services for both residential and commercial properties.",
+      "We offer a wide range of spraying services including pipe repair, drain cleaning, water heater installation, bathroom remodeling, gas line repair, and emergency spraying services for both residential and commercial properties.",
   },
   {
-    question: "How Much Does A Plumber Charge Per Hour?",
+    question: "How Much Does A Spray Painter Charge Per Hour?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.\n\nAenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
   },
   {
     question: "What Kind Of Work Can A Handyman Do?",
     answer:
-      "A handyman can handle various tasks including minor plumbing repairs, fixture installations, pipe replacements, drain cleaning, and general maintenance work around your home or business.",
+      "A handyman can handle various tasks including minor spraying repairs, fixture installations, pipe replacements, drain cleaning, and general maintenance work around your home or business.",
   },
   {
     question: "Does A Handyman Need Insurance?",
@@ -136,7 +136,7 @@ const faqs = [
   {
     question: "Are your prices competitive, and do you provide estimates?",
     answer:
-      "Yes, we offer competitive pricing and provide free estimates for all our services. Contact us to schedule an appointment with one of our experienced plumbers.",
+      "Yes, we offer competitive pricing and provide free estimates for all our services. Contact us to schedule an appointment with one of our experienced spray painters.",
   },
 ];
 

@@ -1,4 +1,4 @@
-import plumberTeam from "@/assets/about-hero-1.png";
+import spray painterTeam from "@/assets/about-hero-1.png";
 import mission from "@/assets/mission-1.png";
 import vision from "@/assets/mission-2.png";
 import profile1 from "@/assets/profile-1.png";
@@ -21,101 +21,109 @@ import { ArrowUpRight, Briefcase, CheckCircle2, Clock3, Heart, MapPin, Shield, S
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 const stats = [{
-  value: 18,
+  value: 25,
   suffix: "+",
   label: "Year Experience",
   decimals: 0
 }, {
-  value: 12,
-  suffix: "+",
-  label: "Award Achieved",
+  value: 1.2,
+  suffix: "k+",
+  label: "Projects Sprayed",
+  decimals: 1
+}, {
+  value: 100,
+  suffix: "%",
+  label: "Cheshire Based",
   decimals: 0
 }, {
-  value: 25,
-  suffix: "k",
-  label: "Happy Clients",
-  decimals: 0
-}, {
-  value: 25,
+  value: 3,
   suffix: "+",
-  label: "Qualified Experts",
+  label: "Sectors Served",
   decimals: 0
 }];
 const timelineData = [{
-  year: "1996",
-  title: "Company Establishment",
-  description: "Aquafix started as a small local plumbing business and has grown into a trusted name in the industry. With decades of experience, we've earned a reputation for delivering reliable and high-quality plumbing services.",
+  year: "1999",
+  title: "Started In uPVC Fabrication",
+  description: "The story began in a small Cheshire uPVC fabrication workshop — learning how every frame, seal and finish is built from the inside out.",
   image: heroGrid1,
   position: "left"
 }, {
-  year: "2005",
-  title: "Our Journey",
-  description: "Aquafix began with a simple goal of providing exceptional plumbing solutions. Over the years, we've built a strong reputation for reliability, quality, and customer satisfaction, becoming a leader in the plumbing industry.",
+  year: "2008",
+  title: "First On-Site Resprays",
+  description: "We took spraying out of the factory and onto driveways and front elevations — refreshing uPVC and garage doors at a fraction of replacement cost.",
   image: heroGrid2,
   position: "right"
 }, {
-  year: "2012",
-  title: "Our Story",
-  description: "From humble beginnings, Aquafix has evolved into a respected plumbing service provider. With years of expertise, we specialize in offering dependable services, focusing on excellence and care for our customers.",
+  year: "2015",
+  title: "Kitchen Spray Booth",
+  description: "Invested in a full workshop spray booth so kitchen cabinets, wardrobes and joinery could be finished to factory standard, then re-fitted at home.",
   image: heroGrid3,
   position: "left"
 }, {
-  year: "2024",
-  title: "Aquafix Overview",
-  description: "Aquafix began as a local plumbing business and quickly grew into a well-known provider of expert services. Our focus on quality, reliability, and customer satisfaction has made us a trusted name in the industry.",
+  year: "Today",
+  title: "Cheshire's Spray Specialists",
+  description: "Now a small, expert team covering all of Cheshire and Ellesmere Port — domestic, commercial and industrial — with the same tidy, workshop-grade ethos.",
   image: heroGrid4,
   position: "right"
 }];
 const coreValues = [{
-  title: "Highly Expert Team",
-  description: "Our team comprises highly skilled team who bring years of experience and expertise to every project.",
+  title: "Workshop-Grade Finish",
+  description: "Every coat applied with the same precision you'd expect from a factory paint line — on-site or in our booth.",
   icon: Users
 }, {
-  title: "Quick Process",
-  description: "We understand the importance of efficiency, which is why we prioritize a streamlined process for our clients.",
+  title: "Minimal Disruption",
+  description: "Kitchens stay usable, businesses keep trading. We work around your day, not the other way round.",
   icon: Zap
 }, {
-  title: "Anytime Service",
-  description: "Emergencies can happen at any time, which is why we offer round-the-clock service to our clients.",
+  title: "Out-Of-Hours Commercial",
+  description: "Shop fronts, offices and units sprayed evenings and weekends to protect your trading hours.",
   icon: Clock3
 }, {
-  title: "Strong Commitment",
-  description: "We are deeply committed to our clients' satisfaction. Our dedication to excellence is evident in our attention to detail.",
+  title: "Tidy Workspace Ethos",
+  description: "Dust sheets, masking, containment — we leave your home or premises as clean as we found them.",
   icon: Heart
 }, {
-  title: "Responsibility",
-  description: "We adhere to the highest ethical standards, prioritize safety in all our operations, and actively engage.",
+  title: "Honest Quoting",
+  description: "Free site visit, fixed written quote, no surprises. The price we agree is the price you pay.",
   icon: Shield
 }, {
-  title: "Safety First",
-  description: "The safety and well-being of our clients providing ongoing training, and equipping our team with the necessary tools.",
+  title: "Safety & PPE First",
+  description: "Full RPE, extraction and surface containment on every job, every time — domestic or industrial.",
   icon: ShieldCheck
 }];
-const missionFeatures = ["Exceeding customer expectations with exceptional service and personalized care.", "Upholding honesty and transparency in all our interactions and business practices.", "Continuously adopting new technologies and methods to improve our services."];
-const visionFeatures = ["Embrace new technologies and methods to enhance our service offerings.", "Build long-lasting relationships with our clients through integrity and transparency.", "Make a positive impact in the communities we serve through active engagement and support."];
+const missionFeatures = [
+  "Save customers the cost and waste of replacing kitchens, uPVC and garage doors when they can be sprayed instead.",
+  "Deliver a hand-finished, factory-grade result on every single project — large or small.",
+  "Treat every home and premises with respect: clean masking, dust containment, tidy hand-over."
+];
+const visionFeatures = [
+  "Be the spray painting specialist Cheshire's homeowners and businesses recommend by name.",
+  "Keep investing in better booths, better guns and better coatings so the finish only ever improves.",
+  "Reduce landfill from replaced kitchens and uPVC across the North West through high-quality respraying."
+];
 const teamMembers = [{
-  name: "Wade Warren",
-  role: "Chief Repair",
+  name: "Lead Spray Technician",
+  role: "Kitchens & Joinery",
   image: profile1
 }, {
-  name: "Brooklyn Simmons",
-  role: "Installation and repairs",
+  name: "uPVC & Exterior Specialist",
+  role: "On-Site Spraying",
   image: profile2
 }, {
-  name: "Robert Fox",
-  role: "Technical evaluator",
+  name: "Workshop Finisher",
+  role: "Wardrobes & Furniture",
   image: profile3
 }, {
-  name: "Darlene Robertson",
-  role: "Technical evaluator",
+  name: "Industrial Coatings Lead",
+  role: "Steelwork & Plant",
   image: profile4
 }, {
-  name: "Kristin Watson",
-  role: "Installation and repairs",
+  name: "Commercial Project Manager",
+  role: "Shop Fronts & Retail",
   image: profile5
 }, {
-  name: "Ralph Edwards",
-  role: "Installation and repairs",
+  name: "Apprentice Sprayer",
+  role: "Prep & Masking",
   image: profile6
 }];
 const FlipButton = ({
@@ -183,12 +191,12 @@ const About = () => {
             <div className="flex lg:flex-row w-full flex-col gap-12 items-end justify-between mb-12">
               <div>
                 <h1 className="leading-tight text-black font-bold text-6xl">
-                  Quality Plumbing<br />and Reliable Service
+                  Quality Spraying<br />and Reliable Service
                 </h1>
               </div>
               <div className="flex max-w-[468px] items-center">
                 <p className="text-black text-justify">
-                  Experience top-notch plumbing solutions and dependable service. Our commitment to quality ensures your plumbing needs are met with reliability and expertise.
+                  Experience top-notch spraying solutions and dependable service. Our commitment to quality ensures your spraying needs are met with reliability and expertise.
                 </p>
               </div>
             </div>
@@ -197,7 +205,7 @@ const About = () => {
             {/* Hero Image with Stats */}
             <div className="relative">
               <div className="rounded-3xl overflow-hidden">
-                <img src={plumberTeam} alt="Quality Plumbing Service" className="w-full h-[400px] lg:h-[500px] object-cover" />
+                <img src={spray painterTeam} alt="Quality Spraying Service" className="w-full h-[400px] lg:h-[500px] object-cover" />
               </div>
 
               {/* Stats Overlay */}
@@ -262,8 +270,8 @@ const About = () => {
                           <img src={item.image} alt={item.title} className="w-full h-64 object-cover" />
                         </div>
                         {item.position === 'left' && <div className="mt-6 lg:block hidden">
-                          <h4 className="text-white font-bold mb-2">{item.title === "Our Journey" || item.title === "Aquafix Overview" ? item.title : ""}</h4>
-                          {(item.title === "Our Journey" || item.title === "Aquafix Overview") && <p className="text-white/60 text-sm">{item.description}</p>}
+                          <h4 className="text-white font-bold mb-2">{item.title === "Our Journey" || item.title === "Cheshire Spray Specialists Overview" ? item.title : ""}</h4>
+                          {(item.title === "Our Journey" || item.title === "Cheshire Spray Specialists Overview") && <p className="text-white/60 text-sm">{item.description}</p>}
                         </div>}
                       </div>
 
@@ -309,7 +317,7 @@ const About = () => {
             </div>
             <div className="flex items-center">
               <p className="text-muted-foreground">
-                We believe in the power of teamwork. Our diverse team of skilled professionals collaborates seamlessly to tackle even the most complex plumbing challenges. By fostering a culture of collaboration, respect.
+                We believe in the power of teamwork. Our diverse team of skilled professionals collaborates seamlessly to tackle even the most complex spraying challenges. By fostering a culture of collaboration, respect.
               </p>
             </div>
           </div>
@@ -334,7 +342,7 @@ const About = () => {
         <div className="container-custom section-padding">
           <div className="text-center mb-20">
             <p className="text-secondary font-bold mb-4">Mission & Vision</p>
-            <h2 className="text-black font-bold">Turning Your Plumbing<br />Needs into Reality</h2>
+            <h2 className="text-black font-bold">Turning Your Spraying<br />Needs into Reality</h2>
           </div>
 
           <div className="space-y-24">
@@ -347,7 +355,7 @@ const About = () => {
                 <div>
                   <h3 className="text-black font-bold mb-4">Our Mission</h3>
                   <p className="text-muted-foreground mb-8 font-semibold text-justify leading-relaxed">
-                    At Aquafix, our mission is to provide top-quality plumbing services that ensure the safety, functionality, and efficiency. We are committed to delivering exceptional customer service, reliable solutions, and expert craftsmanship.
+                    At Cheshire Spray Specialists, our mission is to provide top-quality spraying services that ensure the safety, functionality, and efficiency. We are committed to delivering exceptional customer service, reliable solutions, and expert craftsmanship.
                   </p>
                   <ul className="space-y-4">
                     {missionFeatures.map((feature, index) => <li key={index} className="flex items-start gap-3">
@@ -364,7 +372,7 @@ const About = () => {
                 <div>
                   <h3 className="text-black font-bold mb-4">Our Vision</h3>
                   <p className="text-muted-foreground mb-8 font-semibold text-justify leading-relaxed">
-                    Our vision is to be the leading provider of plumbing services in our community, our integrity, innovation, and excellence. We aim to set the standard for quality and reliability in the plumbing industry.
+                    Our vision is to be the leading provider of spraying services in our community, our integrity, innovation, and excellence. We aim to set the standard for quality and reliability in the spraying industry.
                   </p>
                   <ul className="space-y-4">
                     {visionFeatures.map((feature, index) => <li key={index} className="flex items-start gap-3">
@@ -387,7 +395,7 @@ const About = () => {
         <div className="container-custom section-padding">
           <div className="text-center mb-16">
             <p className="text-secondary font-bold mb-4">Our Experts</p>
-            <h2 className="text-primary">Meet Our Expert Plumbers</h2>
+            <h2 className="text-primary">Meet Our Expert Spray Painters</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
