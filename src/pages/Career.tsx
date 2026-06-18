@@ -1,4 +1,4 @@
-import heroSpray Painter from "@/assets/hero-spray painter.jpg";
+import heroSprayer from "@/assets/hero-plumber.jpg";
 import FadeIn from "@/components/FadeIn";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -199,7 +199,7 @@ const Career = () => {
                 {/* Hero Image */}
                 <div className="rounded-2xl overflow-hidden mb-12">
                   <img
-                    src={heroSpray Painter}
+                    src={heroSprayer}
                     alt={job.title}
                     className="w-full h-[300px] md:h-[400px] object-cover"
                   />

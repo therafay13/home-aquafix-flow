@@ -1,5 +1,5 @@
 import heroGrid2 from "@/assets/hero-grid-2.jpg";
-import spray painterTeam from "@/assets/spray painter-team.jpg";
+import sprayTeamImage from "@/assets/plumber-team.jpg";
 import CTA from "@/components/CTA";
 import FadeIn from "@/components/FadeIn";
 import Footer from "@/components/Footer";
@@ -71,7 +71,7 @@ const BlogDetail = () => {
             {/* Main Image */}
             <div className="rounded-3xl overflow-hidden mb-8">
               <img
-                src={post.image_url || spray painterTeam}
+                src={post.image_url || sprayTeamImage}
                 alt={post.title}
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />
@@ -171,7 +171,7 @@ const BlogDetail = () => {
                       <article className="group cursor-pointer bg-inherit">
                         <div className="relative rounded-2xl overflow-hidden mb-4">
                           <img
-                            src={relatedPost.image_url || spray painterTeam}
+                            src={relatedPost.image_url || sprayTeamImage}
                             alt={relatedPost.title}
                             className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                           />

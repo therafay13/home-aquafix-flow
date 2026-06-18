@@ -1,4 +1,4 @@
-import spray painterTeam from "@/assets/about-hero-1.png";
+import sprayTeamImage from "@/assets/about-hero-1.png";
 import mission from "@/assets/mission-1.png";
 import vision from "@/assets/mission-2.png";
 import profile1 from "@/assets/profile-1.png";
@@ -205,7 +205,7 @@ const About = () => {
             {/* Hero Image with Stats */}
             <div className="relative">
               <div className="rounded-3xl overflow-hidden">
-                <img src={spray painterTeam} alt="Quality Spraying Service" className="w-full h-[400px] lg:h-[500px] object-cover" />
+                <img src={sprayTeamImage} alt="Quality Spraying Service" className="w-full h-[400px] lg:h-[500px] object-cover" />
               </div>
 
               {/* Stats Overlay */}
