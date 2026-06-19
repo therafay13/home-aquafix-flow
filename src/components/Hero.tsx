@@ -81,7 +81,7 @@ const Hero = () => {
             for a fraction of the cost of replacement.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 mb-12 animate-fade-up" style={{
+          <div className="flex flex-wrap items-center gap-4 mb-6 animate-fade-up" style={{
             animationDelay: "0.2s"
           }}>
             <Link to="/quote">
