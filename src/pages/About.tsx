@@ -40,6 +40,9 @@ const stats = [{
   label: "Sectors Served",
   decimals: 0
 }];
+// UNVERIFIED: specific years/milestones below are placeholder/illustrative,
+// not confirmed against real business history — must be verified with client
+// before launch.
 const timelineData = [{
   year: "1999",
   title: "Started In uPVC Fabrication",
