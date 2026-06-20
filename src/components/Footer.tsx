@@ -1,6 +1,6 @@
 import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
-import { Facebook, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 const FlipButton = ({
   children
@@ -68,7 +68,10 @@ const footerLinks = {
 };
 const socialLinks = [{
   icon: Facebook,
-  href: "https://www.facebook.com/"
+  href: "https://www.facebook.com/cheshiresprayingspecialists/"
+}, {
+  icon: Instagram,
+  href: "https://www.instagram.com/cheshiresprayingspecialists/"
 }];
 const Footer = () => {
   return <footer className="bg-primary pt-16 pb-8">
