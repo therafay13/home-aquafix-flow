@@ -13,8 +13,6 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { services } from "@/data/services";
-import { useAuth } from "@/hooks/useAuth";
-import { useUserProfile } from "@/hooks/useUserProfile";
 import { supabase } from "@/integrations/supabase/client";
 import { Clock, DollarSign, Mail, MapPin, Phone, Wrench } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -48,8 +46,6 @@ const contactInfo = [
 
 const Contact = () => {
   const location = useLocation();
-  const { user } = useAuth();
-  const { data: profile } = useUserProfile(user?.id);
 
   const quoteData = location.state?.quoteData as QuoteData | undefined;
   const planData = location.state?.planData as { planName: string; planType: string; price: number } | undefined;
@@ -62,18 +58,6 @@ const Contact = () => {
     notes: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  // Pre-fill form with user data when logged in
-  useEffect(() => {
-    if (user) {
-      setFormData(prev => ({
-        ...prev,
-        fullName: profile?.full_name || prev.fullName,
-        email: user.email || prev.email,
-        phone: profile?.phone || prev.phone,
-      }));
-    }
-  }, [user, profile]);
 
   useEffect(() => {
     if (quoteData) {

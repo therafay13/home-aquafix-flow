@@ -16,8 +16,7 @@ import CTA from "@/components/CTA";
 import FadeIn from "@/components/FadeIn";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { useCareers } from "@/hooks/useCareers";
-import { ArrowUpRight, Briefcase, CheckCircle2, Clock3, Heart, MapPin, Shield, ShieldCheck, Users, Zap } from "lucide-react";
+import { CheckCircle2, Clock3, Heart, Shield, ShieldCheck, Users, Zap } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 const stats = [{
@@ -126,29 +125,11 @@ const teamMembers = [{
   role: "Prep & Masking",
   image: profile6
 }];
-const FlipButton = ({
-  children
-}: {
-  children: React.ReactNode;
-}) => {
-  return <button className="group relative px-8 py-4 bg-white border-primary rounded-full overflow-hidden border">
-    <span className="relative block overflow-hidden h-6">
-      <span className="block transition-transform duration-300 group-hover:-translate-y-full text-primary font-semibold">
-        {children}
-      </span>
-      <span className="absolute top-full left-0 block transition-transform duration-300 group-hover:-translate-y-full text-primary font-semibold">
-        {children}
-      </span>
-    </span>
-  </button>;
-};
 
 const About = () => {
   const timelineRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [animatedYears, setAnimatedYears] = useState<Set<number>>(new Set());
-  const { data: careers, isLoading: careersLoading } = useCareers();
-  console.log("Careers Data:", careers);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -409,69 +390,9 @@ const About = () => {
               </div>
             </FadeIn>)}
           </div>
-          <Link to={"/career"} className="flex items-center justify-center">
-            <FlipButton>Become an Expert</FlipButton>
-          </Link>
         </div>
       </section>
 
-      {/* Job Openings Section */}
-      <section className="pt-20 lg:pt-32 bg-white">
-        <div className="container-custom section-padding">
-          <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <div>
-              <p className="text-secondary font-bold mb-4">Career</p>
-              <h2 className="text-primary text-4xl lg:text-5xl">
-                Opportunities to<br />Join Our Team
-              </h2>
-            </div>
-            <div className="flex items-end">
-              <p className="text-muted-foreground">
-                We offer a dynamic and supportive work environment that encourages professional growth and development. As part of our team, you'll have the opportunity to work on diverse projects.
-              </p>
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            {careersLoading ? (
-              <div className="text-center py-12">
-                <div className="animate-spin h-8 w-8 border-4 border-primary border-t-transparent rounded-full mx-auto mb-4" />
-                <p className="text-muted-foreground">Loading positions...</p>
-              </div>
-            ) : careers && careers.length > 0 ? (
-              careers.map((otherJob, index) => (
-                <FadeIn key={index} delay={index * 100}>
-                  <Link
-                    to={`/career/${otherJob.slug}`}
-                    className={`bg-[#E8ECF4] cursor-pointer rounded-xl px-6 py-5 flex items-center justify-between hover:bg-accent transition-all group duration-300`}
-                  >
-                    <div className="flex items-center gap-8 flex-wrap">
-                      <h5 className="text-primary font-bold min-w-[200px]">
-                        {otherJob.title}
-                      </h5>
-                      <div className="flex items-center gap-6">
-                        <span className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <Briefcase className="w-4 h-4" />
-                          {otherJob.type}
-                        </span>
-                        <span className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <MapPin className="w-4 h-4" />
-                          {otherJob.location}
-                        </span>
-                      </div>
-                    </div>
-                    <ArrowUpRight className="w-6 h-6 text-secondary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                  </Link>
-                </FadeIn>
-              ))
-            ) : (
-              <div className="text-center py-12">
-                <p className="text-muted-foreground">No positions available at the moment.</p>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
       <CTA />
     </main>
     <Footer />

@@ -1,5 +1,4 @@
 import About from "@/components/About";
-import Blog from "@/components/Blog";
 import CTA from "@/components/CTA";
 import Experience from "@/components/Experience";
 import FeaturedWorks from "@/components/FeaturedWorks";
@@ -22,7 +21,6 @@ const Index = () => {
         <About />
         <Solutions />
         <Testimonials />
-        <Blog />
         <CTA />
       </main>
       <Footer />

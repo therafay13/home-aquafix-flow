@@ -1,11 +1,8 @@
 import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
-import { useAuth } from "@/hooks/useAuth";
-import { useUserProfile } from "@/hooks/useUserProfile";
-import { ChevronDown, LayoutDashboard, LogOut, Menu, Phone, User, X } from "lucide-react";
+import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
+import { Link } from "react-router-dom";
 const navLinks = [{
   name: "Home",
   href: "/",
@@ -21,10 +18,6 @@ const navLinks = [{
 }, {
   name: "Work",
   href: "/work",
-  isRoute: true
-}, {
-  name: "Blogs",
-  href: "/blog",
   isRoute: true
 }, {
   name: "Pages",
@@ -55,33 +48,18 @@ const pagesDropdownLinks = [{
     name: "About Us",
     href: "/about"
   }, {
-    name: "Career Details",
-    href: "/career"
-  }, {
-    name: "Blog",
-    href: "/blog"
-  }, {
-    name: "Blog Details",
-    href: "/blog"
+    name: "Pricing",
+    href: "/pricing"
   }, {
     name: "Contact Us",
     href: "/contact"
+  }, {
+    name: "Privacy Policy",
+    href: "/privacy-policy"
   }]
 }, {
   column: 3,
   links: [{
-    name: "Pricing",
-    href: "/pricing"
-  }, {
-    name: "Privacy Policy",
-    href: "/privacy-policy"
-  }, {
-    name: "404 Error",
-    href: "/404"
-  }, {
-    name: "Dashboard",
-    href: "/dashboard"
-  }, {
     name: "Quote",
     href: "/quote"
   }]
@@ -171,7 +149,6 @@ const Header = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isPagesDropdownOpen, setIsPagesDropdownOpen] = useState(false);
-  const navigate = useNavigate();
   const handlePagesClick = () => {
     setIsPagesDropdownOpen(!isPagesDropdownOpen);
   };
@@ -179,13 +156,6 @@ const Header = ({
     setIsPagesDropdownOpen(false);
   };
 
-  const { user, loading, signOut } = useAuth();
-  const { data: profile } = useUserProfile(user?.id);
-
-  const handleSignOut = async () => {
-    await signOut();
-    navigate("/");
-  };
   return <header className={`relative z-50 backdrop-blur-md bg-primary ${isDark ? 'bg-opacity-0' : 'bg-white'}`}>
     <div className="container">
       <div className="flex items-center justify-between h-20">
@@ -206,121 +176,6 @@ const Header = ({
               <Phone className="h-4 w-4" />
               Call 07882 395895</FlipButton>
           </Link>
-          <div className="hidden grow items-center justify-end gap-6 lg:flex">
-            {!user ? (
-              <FlipButton
-                isDark={isDark}
-                props={{
-                  onClick: () => navigate("/auth"),
-
-                }}
-              >
-                Sign In
-              </FlipButton>
-            ) : (
-              <HoverCard
-                openDelay={0}
-              >
-                <HoverCardTrigger asChild>
-                  <div
-                    className="group relative flex items-center gap-0.5 rounded-xl"
-                  >
-                    <div className="size-9 cursor-pointer">
-                      <div className={` flex size-full items-center justify-center rounded-full ${isDark ? "bg-accent" : "bg-primary text-white "}`}>
-                        {user.email?.slice(0, 2).toUpperCase() || "U"}
-                      </div>
-                    </div>
-                    <div
-                      className={`flex h-full min-h-9 cursor-pointer items-center rounded-sm ${isDark ? "group-hover:bg-[#0c133b]/80" : "group-hover:bg-[#f8f8f8]"}`}
-                    >
-                      <ChevronDown className={`${isDark ? "text-white" : "text-primary"} size-4`} />
-                    </div>
-                  </div>
-                </HoverCardTrigger>
-                <HoverCardContent
-                  side="bottom"
-                  align="end"
-                  className={`box-shadow bg-[#0c133b] min-w-65 rounded-lg border p-2 ${isDark
-                    ? "border-gray/20 "
-                    : "border-gray"
-                    }`}
-                >
-                  <div className="flex flex-col gap-1">
-                    <div
-                      className="flex items-center gap-3 rounded-[10px] p-2"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <div className="bg-primary text-white flex size-10 min-h-10 min-w-10 items-center justify-center rounded-full">
-                        {user.email?.slice(0, 2).toUpperCase() || "U"}
-                      </div>
-                      <div className="flex items-center">
-                        <div className="flex flex-col gap-1">
-                          <span
-                            className="max-w-45 truncate leading-6.5 font-medium text-white"
-                          >
-                            {profile?.full_name || user.user_metadata?.full_name || user.email?.split("@")[0]}
-                          </span>
-                          <span
-                            className="max-w-45 truncate text-sm leading-6 text-white/70"
-                          >
-                            {user.email}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className={`m-[1.5px] h-px w-full bg-white/20`}
-                    />
-                    <Link
-                      to="/dashboard"
-                      className={`flex items-center gap-2 rounded-[10px] p-2 hover:bg-white/10`}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                      }}
-                    >
-                      <LayoutDashboard className={`mr-2 h-4 w-4 text-white`} />
-                      <span
-                        className="cursor-pointer text-sm leading-5 tracking-[-0.084px] text-white"
-                      >
-                        Dashboard
-                      </span>
-                    </Link>
-                    <Link
-                      to="/dashboard/profile"
-                      className={`flex items-center gap-2 rounded-[10px] p-2 hover:bg-white/10`}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                      }}
-                    >
-                      <User className={`mr-2 h-4 w-4 text-white`} />
-                      <span
-                        className="cursor-pointer text-sm leading-5 tracking-[-0.084px] text-white"
-                      >
-                        Profile
-                      </span>
-                    </Link>
-                    <div
-                      className={`m-[1.5px] h-px w-full bg-white/20`}
-                    />
-                    <button
-                      className="flex items-center gap-2 rounded-[10px] p-2 hover:bg-white/10"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleSignOut();
-                      }}
-                    >
-                      <LogOut className="mr-2 size-4 text-white" />
-                      <span
-                        className="text-sm leading-5 tracking-tight text-white"
-                      >
-                        Logout
-                      </span>
-                    </button>
-                  </div>
-                </HoverCardContent>
-              </HoverCard>
-            )}
-          </div>
         </div>
 
 

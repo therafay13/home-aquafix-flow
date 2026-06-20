@@ -3,7 +3,6 @@ import FadeIn from "@/components/FadeIn";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
   Select,
@@ -14,13 +13,9 @@ import {
 } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import { services } from "@/data/services";
-import { useAuth } from "@/hooks/useAuth";
-import { useUserProfile } from "@/hooks/useUserProfile";
-import { useCreateQuoteRequest } from "@/hooks/useQuoteRequests";
-import { Calendar, Calculator, Check, Clock, DollarSign, Phone, Wrench } from "lucide-react";
-import { useEffect, useState } from "react";
+import { Calculator, Check, Clock, DollarSign, Wrench } from "lucide-react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "sonner";
 
 export interface QuoteData {
   serviceSlug: string;
@@ -36,24 +31,11 @@ export interface QuoteData {
 
 const QuoteCalculator = () => {
   const navigate = useNavigate();
-  const { user } = useAuth();
-  const { data: profile } = useUserProfile(user?.id);
-  const createQuoteMutation = useCreateQuoteRequest();
-  
+
   const [selectedService, setSelectedService] = useState<string>("");
   const [complexity, setComplexity] = useState<number>(0);
   const [estimatedHours, setEstimatedHours] = useState<number[]>([2]);
   const [urgency, setUrgency] = useState<"standard" | "urgent" | "emergency">("standard");
-  const [phone, setPhone] = useState<string>("");
-  const [serviceDate, setServiceDate] = useState<string>("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  // Pre-fill phone from profile
-  useEffect(() => {
-    if (profile?.phone) {
-      setPhone(profile.phone);
-    }
-  }, [profile]);
 
   const service = services.find((s) => s.slug === selectedService);
 
@@ -81,49 +63,9 @@ const QuoteCalculator = () => {
 
   const estimate = calculateEstimate();
 
-  const handleRequestQuote = async () => {
+  const handleRequestQuote = () => {
     if (!service) return;
 
-    // Validate phone number
-    if (user && !phone.trim()) {
-      toast.error("Please enter your phone number");
-      return;
-    }
-
-    // If user is logged in, save directly to database
-    if (user) {
-      setIsSubmitting(true);
-      try {
-        await createQuoteMutation.mutateAsync({
-          user_id: user.id,
-          full_name: profile?.full_name || user.email?.split("@")[0] || "User",
-          phone: phone.trim(),
-          email: user.email || null,
-          service_slug: service.slug,
-          service_title: service.title,
-          complexity_label: service.complexityOptions[complexity]?.label || "",
-          complexity_multiplier: service.complexityOptions[complexity]?.multiplier || 1,
-          estimated_hours: estimatedHours[0],
-          urgency,
-          base_price: service.basePrice,
-          estimated_min: estimate.min,
-          estimated_max: estimate.max,
-          notes: null,
-          service_date: serviceDate || null,
-        });
-        
-        toast.success("Quote request submitted! View it in your dashboard.");
-        navigate("/dashboard/quotes");
-      } catch (error) {
-        console.error("Error creating quote:", error);
-        toast.error("Failed to submit quote. Please try again.");
-      } finally {
-        setIsSubmitting(false);
-      }
-      return;
-    }
-
-    // If not logged in, navigate to contact form
     const quoteData: QuoteData = {
       serviceSlug: service.slug,
       serviceTitle: service.title,
@@ -316,44 +258,6 @@ const QuoteCalculator = () => {
                       </div>
                     </FadeIn>
                   )}
-
-                  {/* Phone Number - Only for logged in users */}
-                  {service && user && (
-                    <FadeIn delay={300}>
-                      <div className="space-y-3">
-                        <Label className="text-base font-medium text-black">
-                          <Phone className="w-4 h-4 inline mr-2" />
-                          Contact Number *
-                        </Label>
-                        <Input
-                          type="tel"
-                          value={phone}
-                          onChange={(e) => setPhone(e.target.value)}
-                          placeholder="+1 (555) 123-4567"
-                          className="h-14 text-base text-black bg-white"
-                        />
-                      </div>
-                    </FadeIn>
-                  )}
-
-                  {/* Service Date - Only for logged in users */}
-                  {service && user && (
-                    <FadeIn delay={400}>
-                      <div className="space-y-3">
-                        <Label className="text-base font-medium text-black">
-                          <Calendar className="w-4 h-4 inline mr-2" />
-                          Preferred Service Date
-                        </Label>
-                        <Input
-                          type="date"
-                          value={serviceDate}
-                          onChange={(e) => setServiceDate(e.target.value)}
-                          min={new Date().toISOString().split("T")[0]}
-                          className="h-14 text-base text-black bg-white"
-                        />
-                      </div>
-                    </FadeIn>
-                  )}
                 </div>
               </div>
             </FadeIn>
@@ -404,9 +308,8 @@ const QuoteCalculator = () => {
                           size="lg"
                           className="w-full rounded-full text-lg py-6"
                           onClick={handleRequestQuote}
-                          disabled={isSubmitting}
                         >
-                          {isSubmitting ? "Submitting..." : "Request Official Quote"}
+                          Request Official Quote
                         </Button>
                         <p className="text-center text-sm text-primary-foreground/60 mt-3">
                           *This is an estimate. Final pricing may vary based on inspection.
