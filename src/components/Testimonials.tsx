@@ -1,49 +1,43 @@
-import avatar1 from "@/assets/avatar-1.jpg";
-import avatar2 from "@/assets/avatar-2.jpg";
-import avatar3 from "@/assets/avatar-3.jpg";
 import FadeIn from "@/components/FadeIn";
+import { Quote, Star } from "lucide-react";
 
+// Real testimonials pulled verbatim from the live old site
+// (cheshiresprayingspecialists.co.uk/testimonials). The source site carries
+// no customer names, so reviews are unattributed — no invented names or
+// locations, and no stock photos presented as real customer avatars.
 const testimonials = [{
-  name: "Sarah J.",
-  location: "Chester",
-  text: "Our kitchen looks like a brand-new installation for a fraction of the cost. The team were spotless, on time and the finish is unbelievable.",
-  avatar: avatar1
+  text: "Highly recommended we absolutely love what you have done. Saved us so much money with not replacing. Easy to organise with. Trustworthly to be in the house when not there. Will most definitely be in touch for more work. Thank you so very much. Such an amazing job."
 }, {
-  name: "Mark D.",
-  location: "Ellesmere Port",
-  text: "Had the whole front of the house uPVC sprayed anthracite grey. Done in a day, no mess, and you genuinely can't tell it wasn't factory.",
-  avatar: avatar2
+  text: "Done a fantastic job with my kitchen. Very professional company, everything was tidied up afterwards, there was no mess. Would definitely recommend them, very reliable, you won't be disappointed."
 }, {
-  name: "Helen R.",
-  location: "Neston",
-  text: "Fitted wardrobes resprayed in matte black — the bedroom feels completely transformed. Polite, tidy and brilliant attention to detail.",
-  avatar: avatar3
+  text: "These 2 boys came & done a fabulous job on my garage door, house doors & windows I would highly recommend them they are professional, punctual & very clean workers so get on them now"
 }, {
-  name: "Tom B.",
-  location: "Wirral",
-  text: "Garage door looked twenty years old; now it looks better than the day it was fitted. Booked them again for the soffits already.",
-  avatar: avatar1
+  text: "Great job done!"
 }, {
-  name: "Pinnacle Retail Ltd.",
-  location: "Cheshire Oaks",
-  text: "Resprayed two shop fronts out of hours so we didn't lose a single trading hour. Faultless from quote to completion.",
-  avatar: avatar2
+  text: "Absolutely Perfect! No mess, such tidy hard working lads, they made my 15yr old kitchen look brand new! Thank you!"
+}, {
+  text: "They came round to do my Mum's bedroom & done a perfect job, they were never late & worked until they had finished what they were doing. Would recommend to anyone looks amazing!"
+}, {
+  text: "Such hard workers & my wardrobes look brand new! Deffo recommend!"
+}, {
+  text: "Absolutely thrilled with the transformation of my garage door. Thank you Cheshire Spraying Specialists for doing such a fantastic job. 100% recommended."
+}, {
+  text: "Well what can I say, I absolutely love my room. You guys have done an amazing job, 5 Star. Great local guys wish you all the luck in the world with your business (I'm still looking for things to spray)!"
 }];
 
 const TestimonialCard = ({
-  name,
-  location,
-  text,
-  avatar
-}: typeof testimonials[0]) => <div className="bg-white rounded-2xl p-6 min-w-[320px] max-w-[320px] flex-shrink-0">
-    <div className="flex items-center gap-3 mb-4">
-      <img src={avatar} alt={name} className="w-12 h-12 rounded-full object-cover" />
-      <div>
-        <h6 className="font-semibold text-base text-secondary">{name}</h6>
-        <p className="text-muted-foreground text-sm">{location}</p>
+  text
+}: typeof testimonials[0]) => <div className="bg-white rounded-2xl p-6 w-[320px] max-w-[320px] flex-shrink-0 flex flex-col">
+    <div className="flex items-center justify-between mb-4">
+      <Quote className="w-8 h-8 text-tertiary/40" />
+      <div className="flex gap-0.5">
+        {Array.from({
+          length: 5
+        }).map((_, i) => <Star key={i} className="w-4 h-4 fill-tertiary text-tertiary" />)}
       </div>
     </div>
-    <p className="text-muted-foreground text-sm leading-relaxed">{text}</p>
+    <p className="text-muted-foreground text-sm leading-relaxed flex-grow">{text}</p>
+    <p className="text-secondary font-semibold text-sm mt-4 pt-4 border-t border-gray-100">Verified Customer</p>
   </div>;
 
 const Testimonials = () => {
