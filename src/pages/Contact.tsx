@@ -250,7 +250,7 @@ const Contact = () => {
               <div className="rounded-2xl overflow-hidden">
                 <img
                   src={contact}
-                  alt="Plumber at work"
+                  alt="Spray painter masking and prepping a kitchen for a respray"
                   className="w-full h-full object-cover min-h-[400px]"
                 />
               </div>
