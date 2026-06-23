@@ -1,6 +1,3 @@
-import avatar1 from "@/assets/avatar-1.jpg";
-import avatar2 from "@/assets/avatar-2.jpg";
-import avatar3 from "@/assets/avatar-3.jpg";
 import heroGrid1 from "@/assets/hero-grid-1.jpg";
 import heroGrid2 from "@/assets/hero-grid-2.jpg";
 import heroGrid3 from "@/assets/hero-grid-3.jpg";
@@ -98,19 +95,10 @@ const Hero = () => {
           <div className="flex items-center gap-4 animate-fade-up" style={{
             animationDelay: "0.3s"
           }}>
-            <div className="flex items-center">
-              <div className="flex -space-x-3">
-                <img src={avatar1} alt="Client 1" className="w-12 h-12 rounded-full border-2 border-secondary object-cover" />
-                <img src={avatar2} alt="Client 2" className="w-12 h-12 rounded-full border-2 border-secondary object-cover" />
-                <img src={avatar3} alt="Client 3" className="w-12 h-12 rounded-full border-2 border-secondary object-cover" />
-                <div className="w-12 h-12 rounded-full bg-tertiary flex items-center justify-center text-primary text-sm font-bold border-2 border-secondary">
-                  1.2k
-                </div>
-              </div>
-            </div>
             <div>
-              <p className="text-white font-bold text-xl">1,200+</p>
-              <p className="text-white/60 text-sm">Projects Sprayed Across Cheshire</p>
+              {/* UNVERIFIED: "1,200+" is a marketing claim, not a measured figure — confirm the real project count with the client before launch. */}
+              <p className="text-white font-bold text-4xl">1,200+</p>
+              <p className="text-white/60 text-sm mt-2">Projects Sprayed Across Cheshire</p>
             </div>
           </div>
         </div>
