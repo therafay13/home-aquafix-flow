@@ -59,12 +59,9 @@ const footerLinks = {
     href: "/services/shop-fronts-commercial"
   }],
   resources: [{
-    name: "FAQ",
-    href: "/faq"
-  }, {
     name: "Privacy Policy",
     href: "/privacy-policy"
-  },]
+  }]
 };
 const socialLinks = [{
   icon: Facebook,
@@ -153,7 +150,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Cheshire Spray Specialists. All rights reserved.
           </p>
           <div className="flex gap-6">
-            {footerLinks.resources.slice(1).map(link => <a key={link.name} href={link.href} className="text-white/40 hover:text-white transition-colors text-sm">
+            {footerLinks.resources.map(link => <a key={link.name} href={link.href} className="text-white/40 hover:text-white transition-colors text-sm">
               {link.name}
             </a>)}
           </div>
