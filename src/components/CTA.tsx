@@ -1,6 +1,6 @@
-import avatar1 from "@/assets/avatar-1.jpg";
 import heroPlumber from "@/assets/hero-plumber.jpg";
 import FadeIn from "@/components/FadeIn";
+import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -59,15 +59,9 @@ const CTA = () => {
 
             {/* Right Card */}
             <div className="bg-tertiary rounded-3xl p-8 lg:p-10 flex flex-col justify-center min-h-[320px]">
-              {/* Avatar */}
+              {/* Logo */}
               <div className="mb-6">
-                <div className="w-16 h-16 rounded-full border-4 border-secondary overflow-hidden">
-                  <img
-                    src={avatar1}
-                    alt="Cheshire Spray Specialists owner"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <Logo isDark />
               </div>
               {/* Text */}
               <p className="text-primary font-semibold text-xl leading-relaxed mb-8">
