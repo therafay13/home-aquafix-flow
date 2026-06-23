@@ -95,10 +95,20 @@ const Hero = () => {
           <div className="flex items-center gap-4 animate-fade-up" style={{
             animationDelay: "0.3s"
           }}>
-            <div>
-              {/* UNVERIFIED: "1,200+" is a marketing claim, not a measured figure — confirm the real project count with the client before launch. */}
-              <p className="text-white font-bold text-4xl">1,200+</p>
-              <p className="text-white/60 text-sm mt-2">Projects Sprayed Across Cheshire</p>
+            <div className="flex items-stretch">
+              <div className="w-1 bg-tertiary rounded-full self-stretch mr-4" />
+              <div className="flex items-center">
+                <div>
+                  <p className="text-white text-3xl font-bold">25+</p>
+                  <p className="text-white/60 text-xs mt-1">Years Serving Cheshire</p>
+                </div>
+                <div className="w-px bg-white/20 self-stretch mx-6" />
+                {/* UNVERIFIED: "1,200+" is a marketing claim, not a measured figure — confirm the real project count with the client before launch. */}
+                <div>
+                  <p className="text-white text-3xl font-bold">1,200+</p>
+                  <p className="text-white/60 text-xs mt-1">Projects Sprayed</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
