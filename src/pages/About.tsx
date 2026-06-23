@@ -175,12 +175,12 @@ const About = () => {
             <div className="flex lg:flex-row w-full flex-col gap-12 items-end justify-between mb-12">
               <div>
                 <h1 className="leading-tight text-black font-bold text-6xl">
-                  Quality Spraying<br />and Reliable Service
+                  Most things don't need<br />replacing. They need finishing.
                 </h1>
               </div>
               <div className="flex max-w-[468px] items-center">
                 <p className="text-black text-justify">
-                  Experience top-notch spraying solutions and dependable service. Our commitment to quality ensures your spraying needs are met with reliability and expertise.
+                  We're Cheshire's spray painting specialists — 25 years respraying kitchens, uPVC, garage doors and shop fronts to a workshop-grade finish, in your home, around your day, for a fraction of the cost of replacement.
                 </p>
               </div>
             </div>
