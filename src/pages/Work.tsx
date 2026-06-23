@@ -78,24 +78,24 @@ const Work = () => {
           <div className="grid md:grid-cols-2 gap-8 gap-y-16">
             {works.map((work, index) => (
               <FadeIn key={index} delay={index * 100}>
-                <Link to={`/work/${work.slug}`} className="group cursor-pointer block">
+                <div>
                   {/* Image */}
                   <div className="overflow-hidden rounded-2xl mb-6">
                     <img
                       src={work.image}
                       alt={work.title}
-                      className="w-full h-[420px] object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-[420px] object-cover"
                     />
                   </div>
 
                   {/* Content */}
-                  <h5 className="text-black text-4xl font-bold mb-3 group-hover:text-primary transition-colors">
+                  <h5 className="text-black text-4xl font-bold mb-3">
                     {work.title}
                   </h5>
                   <p className="text-muted-foreground font-medium leading-relaxed">
                     {work.description}
                   </p>
-                </Link>
+                </div>
               </FadeIn>
             ))}
           </div>
