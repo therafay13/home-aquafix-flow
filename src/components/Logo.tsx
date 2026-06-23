@@ -37,9 +37,10 @@ const Logo = ({ isDark = false }: { isDark?: boolean }) => {
           <circle cx="36" cy="14" r="1" fill="hsl(16 100% 65%)" opacity="0.7" />
         </svg>
       </div>
-      <div className="flex flex-col leading-none">
-        <span className={`font-bebas tracking-wider text-xl ${textColor}`}>CHESHIRE SPRAYING</span>
-        <span className="font-bebas tracking-[0.25em] text-[10px] text-tertiary mt-0.5">SPECIALISTS</span>
+      <div className="flex flex-col leading-tight">
+        <span className={`font-bebas tracking-[0.15em] text-2xl ${textColor}`}>CHESHIRE SPRAYING</span>
+        <div className={`w-full h-px ${isDark ? 'bg-white/25' : 'bg-primary/20'} my-1`} />
+        <span className={`font-bebas tracking-[0.4em] text-[9px] ${isDark ? 'text-white/60' : 'text-tertiary'} mt-0.5`}>SPECIALISTS</span>
       </div>
     </div>
   );
