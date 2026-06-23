@@ -65,7 +65,7 @@ const CTA = () => {
               </div>
               {/* Text */}
               <p className="text-primary font-semibold text-xl leading-relaxed mb-8">
-                Speak directly with the team at Cheshire Spray Specialists — we'll talk through your project and book a free site visit.
+                Speak directly with the team at Cheshire Spraying Specialists — we'll talk through your project and book a free site visit.
               </p>
               {/* Button */}
               <Link to="tel:+447882395895">

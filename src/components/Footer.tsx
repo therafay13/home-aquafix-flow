@@ -147,7 +147,7 @@ const Footer = () => {
       <div className="border-t border-white/10 pt-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-sm">
-            © {new Date().getFullYear()} Cheshire Spray Specialists. All rights reserved.
+            © {new Date().getFullYear()} Cheshire Spraying Specialists. All rights reserved.
           </p>
           <div className="flex gap-6">
             {footerLinks.resources.map(link => <a key={link.name} href={link.href} className="text-white/40 hover:text-white transition-colors text-sm">
