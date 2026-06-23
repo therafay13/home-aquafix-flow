@@ -44,7 +44,7 @@ const Services = () => {
                 </div>
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-lg font-bold text-primary group-hover:text-white transition-colors duration-300">
-                    From ${service.basePrice}/hr
+                    From £{service.basePrice}/hr
                   </span>
                 </div>
                 <p className="text-muted-foreground leading-relaxed transition-all duration-300 group-hover:text-white">

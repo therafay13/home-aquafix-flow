@@ -215,7 +215,7 @@ const Contact = () => {
                       <DollarSign className="w-5 h-5 text-accent" />
                       <div>
                         <p className="text-sm text-primary-foreground/70">Estimate</p>
-                        <p className="font-bold text-lg">${quoteData.estimatedMin} - ${quoteData.estimatedMax}</p>
+                        <p className="font-bold text-lg">£{quoteData.estimatedMin} - £{quoteData.estimatedMax}</p>
                       </div>
                     </div>
                   </div>
@@ -231,7 +231,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm text-primary-foreground/70">Rate</p>
-                      <p className="font-bold text-lg">${planData.price}/hr</p>
+                      <p className="font-bold text-lg">£{planData.price}/hr</p>
                     </div>
                   </div>
                 ) : null}
