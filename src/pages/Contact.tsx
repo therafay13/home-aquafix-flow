@@ -279,8 +279,8 @@ const Contact = () => {
                       Phone <span className="text-destructive">*</span>
                     </label>
                     <Input
-                      type="number"
-                      placeholder="Ex. +123 456 789"
+                      type="tel"
+                      placeholder="07882 395895"
                       className="bg-transparent border-border"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
