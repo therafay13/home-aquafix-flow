@@ -61,7 +61,7 @@ const CTA = () => {
             <div className="bg-tertiary rounded-3xl p-8 lg:p-10 flex flex-col justify-center min-h-[320px]">
               {/* Logo */}
               <div className="mb-6">
-                <Logo isDark />
+                <Logo isDark outlined />
               </div>
               {/* Text */}
               <p className="text-primary font-semibold text-xl leading-relaxed mb-8">

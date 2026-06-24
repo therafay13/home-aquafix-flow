@@ -1,7 +1,8 @@
-const Logo = ({ isDark = false }: { isDark?: boolean }) => {
+const Logo = ({ isDark = false, outlined = false }: { isDark?: boolean; outlined?: boolean }) => {
   const textColor = isDark ? "text-white" : "text-primary";
-  const sprayingColor = isDark ? "text-white" : "text-[#E05C30]";
   const strokeColor = isDark ? "#ffffff" : "hsl(240 6% 11%)";
+  const textStroke = outlined ? { WebkitTextStroke: '1.5px rgba(0,0,0,0.32)' } : {};
+  const svgFilter = outlined ? { filter: 'drop-shadow(0 0 2.5px rgba(0,0,0,0.35))' } : {};
   return (
     <div className="flex items-center gap-2.5">
       <div className="relative">
@@ -12,6 +13,7 @@ const Logo = ({ isDark = false }: { isDark?: boolean }) => {
           viewBox="0 0 44 44"
           fill="none"
           aria-label="Cheshire Spray Specialists"
+          style={svgFilter}
         >
           {/* Stencil-style hex shield */}
           <path
@@ -39,13 +41,13 @@ const Logo = ({ isDark = false }: { isDark?: boolean }) => {
         </svg>
       </div>
       <div className="flex flex-col">
-        <span className={`font-bebas text-[15px] font-black tracking-[0.2em] leading-[18px] pl-0 ${textColor}`}>
+        <span className={`font-bebas text-[15px] font-black tracking-[0.2em] leading-[18px] pl-0 ${textColor}`} style={textStroke}>
           CHESHIRE
         </span>
-        <span className={`font-bebas text-[15px] font-black tracking-[0.2em] leading-[18px] pl-3 ${sprayingColor}`}>
+        <span className={`font-bebas text-[15px] font-black tracking-[0.2em] leading-[18px] pl-3 text-[#E05C30]`} style={textStroke}>
           SPRAYING
         </span>
-        <span className={`font-bebas text-[15px] font-black tracking-[0.2em] leading-[18px] pl-6 ${textColor}`}>
+        <span className={`font-bebas text-[15px] font-black tracking-[0.2em] leading-[18px] pl-6 ${textColor}`} style={textStroke}>
           SPECIALISTS
         </span>
       </div>
