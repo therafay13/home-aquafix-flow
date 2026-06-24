@@ -1,8 +1,8 @@
 import workKitchen from "@/assets/work-1.png";
 import workUpvc from "@/assets/work-2.png";
 import workGarage from "@/assets/work-3.png";
+import workFascias from "@/assets/work-4.png";
 import FadeIn from "@/components/FadeIn";
-import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 
 const projects = [
@@ -21,18 +21,19 @@ const projects = [
     description: "Up-and-over door stripped, primed and finished in satin black — without removal.",
     image: workGarage,
   },
+  {
+    title: "Fascias & Roofline",
+    description: "Weather-worn fascias, soffits and downpipes on a Cheshire detached restored to crisp white — fraction of replacement cost.",
+    image: workFascias,
+  },
 ];
 
 const FeaturedWorks = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const getCardWidth = (index: number) => {
-    // If no card is hovered, first card takes 60%, others take 20%
-    if (hoveredIndex === null) {
-      return index === 0 ? "60%" : "20%";
-    }
-    // When hovering, hovered card takes 60%, others take 20%
-    return hoveredIndex === index ? "60%" : "20%";
+    if (hoveredIndex === null) return index === 0 ? "50%" : "16.67%";
+    return hoveredIndex === index ? "50%" : "16.67%";
   };
 
   return (
@@ -78,14 +79,6 @@ const FeaturedWorks = () => {
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80" />
-
-                {/* Arrow Icon - Only on hover */}
-                <div className={`absolute top-4 right-4 transition-opacity duration-300 ${hoveredIndex === index || (hoveredIndex === null && index === 0) ? "opacity-100" : "opacity-0"
-                  }`}>
-                  <div className="w-10 h-10 rounded-full bg-tertiary flex items-center justify-center">
-                    <ArrowUpRight className="h-5 w-5 text-primary" />
-                  </div>
-                </div>
 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
