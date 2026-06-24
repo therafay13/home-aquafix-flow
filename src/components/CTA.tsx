@@ -58,18 +58,18 @@ const CTA = () => {
             </div>
 
             {/* Right Card */}
-            <div className="bg-tertiary rounded-3xl p-8 lg:p-10 flex flex-col justify-center min-h-[320px]">
+            <div className="bg-primary rounded-3xl p-8 lg:p-10 flex flex-col justify-center min-h-[320px]">
               {/* Logo */}
               <div className="mb-6">
-                <Logo isDark outlined />
+                <Logo isDark />
               </div>
               {/* Text */}
-              <p className="text-primary font-semibold text-xl leading-relaxed mb-8">
+              <p className="text-white font-semibold text-xl leading-relaxed mb-8">
                 Speak directly with the team at Cheshire Spraying Specialists — we'll talk through your project and book a free site visit.
               </p>
               {/* Button */}
               <Link to="tel:+447882395895">
-                <FlipButton variant="dark">Call 07882 395895</FlipButton>
+                <FlipButton variant="light">Call 07882 395895</FlipButton>
               </Link>
             </div>
           </div>
