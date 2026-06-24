@@ -1,5 +1,6 @@
 const Logo = ({ isDark = false }: { isDark?: boolean }) => {
   const textColor = isDark ? "text-white" : "text-primary";
+  const sprayingColor = isDark ? "text-white" : "text-[#E05C30]";
   const strokeColor = isDark ? "#ffffff" : "hsl(240 6% 11%)";
   return (
     <div className="flex items-center gap-2.5">
@@ -41,7 +42,7 @@ const Logo = ({ isDark = false }: { isDark?: boolean }) => {
         <span className={`font-bebas text-[15px] font-black tracking-[0.2em] leading-[18px] pl-0 ${textColor}`}>
           CHESHIRE
         </span>
-        <span className="font-bebas text-[15px] font-black tracking-[0.2em] leading-[18px] pl-3 text-[#E05C30]">
+        <span className={`font-bebas text-[15px] font-black tracking-[0.2em] leading-[18px] pl-3 ${sprayingColor}`}>
           SPRAYING
         </span>
         <span className={`font-bebas text-[15px] font-black tracking-[0.2em] leading-[18px] pl-6 ${textColor}`}>
