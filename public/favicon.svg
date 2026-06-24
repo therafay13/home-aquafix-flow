@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="6" fill="hsl(240 6% 11%)"/>
-  <path d="M16 2 L27 8.5 V23.5 L16 30 L5 23.5 V8.5 Z" stroke="white" stroke-width="1.5" fill="none"/>
-  <text x="16" y="20" text-anchor="middle" font-family="Impact, sans-serif" font-size="10" letter-spacing="0.5" fill="white">CSS</text>
-  <circle cx="25" cy="7" r="2.5" fill="hsl(14 78% 57%)"/>
-  <circle cx="27.5" cy="5" r="1" fill="hsl(16 100% 65%)" opacity="0.85"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="hsl(240 6% 11%)"/>
+  <path d="M16 4 L27 10.5 V21.5 L16 28 L5 21.5 V10.5 Z" stroke="white" stroke-width="2" fill="none"/>
+  <circle cx="24.5" cy="8.5" r="4" fill="hsl(14 78% 57%)"/>
+  <circle cx="28" cy="5.5" r="1.8" fill="hsl(16 100% 65%)" opacity="0.85"/>
 </svg>
