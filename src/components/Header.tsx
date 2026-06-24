@@ -122,24 +122,19 @@ const Header = ({
           <div className="relative">
             <button
               onClick={handlePagesClick}
-              className={`group flex items-center justify-center w-8 h-8 rounded-full transition-colors ${isDark ? 'text-white hover:bg-white/10' : 'text-[#595B67] hover:bg-black/5'}`}
+              className={`group flex items-center justify-center w-8 h-8 rounded-full transition-colors ${isPagesDropdownOpen ? 'bg-white/15' : ''} ${isDark ? 'text-white hover:bg-white/10' : 'text-[#595B67] hover:bg-black/5'}`}
             >
               <MoreHorizontal className="h-5 w-5" />
             </button>
-            <div className={`absolute right-0 top-full mt-1 w-52 transition-all duration-200 ${isPagesDropdownOpen ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-1'}`}>
-              {/* Caret connecting dropdown to the ··· button */}
-              <div className="flex justify-end pr-[14px]">
-                <div className="w-3 h-3 rotate-45 bg-white/15 border-l border-t border-white/25 backdrop-blur-md" />
-              </div>
-              {/* Panel */}
-              <div className="rounded-xl overflow-hidden backdrop-blur-md bg-white/10 border border-white/20 shadow-xl">
-                <div className="p-3 flex flex-col gap-1">
+            <div className={`absolute right-0 top-full mt-3 w-56 transition-all duration-200 ${isPagesDropdownOpen ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-2'}`}>
+              <div className="rounded-2xl overflow-hidden border border-white/8 shadow-2xl" style={{ background: 'hsl(240 6% 16%)' }}>
+                <div className="p-2 flex flex-col">
                   {overflowLinks.map(link => (
                     <Link
                       key={link.name}
                       to={link.href}
                       onClick={closeDropdown}
-                      className="px-3 py-2 rounded-lg text-white/90 hover:text-white hover:bg-white/10 transition-all duration-150 font-medium text-sm"
+                      className="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/8 transition-all duration-150 font-medium text-sm"
                     >
                       {link.name}
                     </Link>
