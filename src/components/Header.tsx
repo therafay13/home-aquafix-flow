@@ -1,69 +1,19 @@
 import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Menu, MoreHorizontal, Phone, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-const navLinks = [{
-  name: "Home",
-  href: "/",
-  isRoute: true
-}, {
-  name: "About",
-  href: "/about",
-  isRoute: true
-}, {
-  name: "Service",
-  href: "/services",
-  isRoute: true
-}, {
-  name: "Work",
-  href: "/work",
-  isRoute: true
-}, {
-  name: "Pages",
-  href: "#",
-  hasDropdown: true
-}];
-const pagesDropdownLinks = [{
-  column: 1,
-  links: [{
-    name: "Home",
-    href: "/"
-  }, {
-    name: "Service",
-    href: "/services"
-  }, {
-    name: "Service Details",
-    href: "/services"
-  }, {
-    name: "Work",
-    href: "/work"
-  }, {
-    name: "Work Details",
-    href: "/work"
-  }]
-}, {
-  column: 2,
-  links: [{
-    name: "About Us",
-    href: "/about"
-  }, {
-    name: "Pricing",
-    href: "/pricing"
-  }, {
-    name: "Contact Us",
-    href: "/contact"
-  }, {
-    name: "Privacy Policy",
-    href: "/privacy-policy"
-  }]
-}, {
-  column: 3,
-  links: [{
-    name: "Quote",
-    href: "/quote"
-  }]
-}];
+const navLinks = [
+  { name: "Home", href: "/", isRoute: true },
+  { name: "About", href: "/about", isRoute: true },
+  { name: "Service", href: "/services", isRoute: true },
+  { name: "Work", href: "/work", isRoute: true },
+  { name: "Contact", href: "/contact", isRoute: true },
+];
+const overflowLinks = [
+  { name: "Get a Free Quote", href: "/quote" },
+  { name: "Privacy Policy", href: "/privacy-policy" },
+];
 const FlipLink = ({
   children,
   hasDropdown,
@@ -168,6 +118,24 @@ const Header = ({
           {navLinks.map(link => <FlipLink key={link.name} hasDropdown={link.hasDropdown} href={link.href} isRoute={link.isRoute} onClick={link.hasDropdown ? handlePagesClick : undefined} isActive={link.hasDropdown && isPagesDropdownOpen} isDark={isDark}>
             {link.name}
           </FlipLink>)}
+          {/* Overflow nav — secondary pages */}
+          <div className="relative">
+            <button
+              onClick={handlePagesClick}
+              className={`group flex items-center justify-center w-8 h-8 rounded-full transition-colors ${isDark ? 'text-white hover:bg-white/10' : 'text-[#595B67] hover:bg-black/5'}`}
+            >
+              <MoreHorizontal className="h-5 w-5" />
+            </button>
+            <div className={`absolute right-0 top-full mt-3 w-52 rounded-xl shadow-xl transition-all duration-200 overflow-hidden ${isPagesDropdownOpen ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-1'} ${isDark ? 'bg-white' : 'bg-primary'}`}>
+              <div className="p-3 flex flex-col gap-1">
+                {overflowLinks.map(link => (
+                  <DropdownFlipLink key={link.name} href={link.href} onClick={closeDropdown} isDark={isDark}>
+                    {link.name}
+                  </DropdownFlipLink>
+                ))}
+              </div>
+            </div>
+          </div>
         </nav>
         <div className="hidden lg:flex gap-3">
           {/* CTA Button & Cart */}
@@ -183,21 +151,6 @@ const Header = ({
         <button className={`lg:hidden ${isDark ? 'text-white' : 'text-[#595B67]'}`} onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
-      </div>
-
-      {/* Pages Dropdown */}
-      <div className={`absolute left-1/2 -translate-x-1/2 top-full mt-2 rounded-lg shadow-xl transition-all duration-300 ease-in-out overflow-hidden ${isPagesDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} ${isDark ? "bg-white" : "bg-primary"}`} style={{
-        width: '600px'
-      }}>
-        <div className="p-8 rounded-none">
-          <div className="grid grid-cols-3 gap-x-12 gap-y-4">
-            {pagesDropdownLinks.map(column => <div key={column.column} className="flex flex-col gap-4">
-              {column.links.map(link => <DropdownFlipLink key={link.name} href={link.href} onClick={closeDropdown} isDark={isDark}>
-                {link.name}
-              </DropdownFlipLink>)}
-            </div>)}
-          </div>
-        </div>
       </div>
 
       {/* Mobile Navigation */}
