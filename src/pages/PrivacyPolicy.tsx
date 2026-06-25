@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h1>
             <p className="text-muted-foreground font-medium">
-              Last Updated: November 15, 2023
+              Last Updated: June 2025
             </p>
           </FadeIn>
         </div>
@@ -32,73 +32,100 @@ const PrivacyPolicy = () => {
         <div className="container mx-auto max-w-4xl">
           <FadeIn>
             <div className="space-y-12">
-              {/* What Information We are Taking */}
+              {/* Who We Are */}
               <div>
                 <h2 className="text-4xl font-bold text-black mb-4">
-                  What Information We are Taking
+                  Who We Are
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur. Lorem et purus enim velit sed vel laoreet enim non. Eros ultrices ut risus quisque curabitur aliquet eget nascetur tincidunt. Iaculis curabitur tempor maecenas sit. Cras eu enim leo sit eu quis quis ullamcorper. Bibendum quam consectetur et suspendisse duis aliquam cras. Aliquet in malesuada quis augue turpis fringilla iaculis quam pretium. Nulla id non eu non vel donec. Scelerisque tellus praesent suspendisse egestas at scelerisque. Leo at semper gravida sit leo odio.
+                    Cheshire Spraying Specialists is a spray painting and surface coating business based in Ellesmere Port, Cheshire. We operate across Cheshire and the surrounding area, providing kitchen resprays, uPVC spraying, garage door resprays, fascia and soffit coatings, and commercial spray painting services. This privacy policy explains how we collect, use, and protect your personal information when you use this website or contact us for a quote.
                   </p>
                   <p>
-                    Nibh hac dolor odio in curabitur. Cursus ornare id elit cras dolor. Tincidunt sed quisque sed enim nulla metus. Dui porttitor scelerisque ullamcorper id praesent semper platea nisi. Id ullamcorper vehicula velit egestas id. Tristique arcu facilisi ipsum arcu fermentum tellus. Facilisi augue orci dolor id sit. Aliquam auctor interdum turpis sit ut viverra id nullam. Lobortis mauris neque elit massa a. Nibh pharetra bibendum fermentum consectetur pharetra volutpat eu amet.
+                    If you have any questions about this policy, contact us at: cheshiresprayingspecialists@gmail.com or by calling 07882 395895.
                   </p>
                 </div>
               </div>
 
-              {/* How We Use Your Informations */}
+              {/* What Information We Collect */}
               <div>
                 <h2 className="text-4xl font-bold text-black mb-4">
-                  How We Use Your Informations
+                  What Information We Collect
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur. Lorem et purus enim velit sed vel laoreet enim non. Eros ultrices ut risus quisque curabitur aliquet eget nascetur tincidunt. Iaculis curabitur tempor maecenas sit. Cras eu enim leo sit eu quis quis ullamcorper. Bibendum quam consectetur et suspendisse duis aliquam cras. Aliquet in malesuada quis augue turpis fringilla iaculis quam pretium. Nulla id non eu non vel donec. Scelerisque tellus praesent suspendisse egestas at scelerisque. Leo at semper gravida sit leo odio.
+                    When you submit an enquiry, request a quote, or contact us through this website, we collect the information you provide in the form — typically your name, phone number, email address, and details about the work you require. We do not collect payment card details through this website.
+                  </p>
+                  <p>
+                    We may also receive basic technical information about your visit, such as your browser type and the pages you viewed, but this is not linked to your personal identity.
+                  </p>
+                </div>
+              </div>
+
+              {/* How We Use Your Information */}
+              <div>
+                <h2 className="text-4xl font-bold text-black mb-4">
+                  How We Use Your Information
+                </h2>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    We use the information you submit solely to respond to your enquiry, prepare a quote, or arrange a site visit. We do not use your information for any automated profiling or decision-making. We do not sell, rent, or share your personal information with third-party marketing organisations.
                   </p>
                   <ul className="list-disc list-inside space-y-1 pl-2">
-                    <li>Some legal item</li>
-                    <li>Some another legal item</li>
-                    <li>Last legal item</li>
+                    <li>To respond to your quote request or enquiry</li>
+                    <li>To arrange a site visit or follow up on a job</li>
+                    <li>To contact you about work we have completed for you</li>
                   </ul>
                 </div>
               </div>
 
-              {/* Cookies and Tracking */}
+              {/* How Long We Keep Your Information */}
               <div>
                 <h2 className="text-4xl font-bold text-black mb-4">
-                  Cookies and Tracking
+                  How Long We Keep Your Information
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur. Lorem et purus enim velit sed vel laoreet enim non. Eros ultrices ut risus quisque curabitur aliquet eget nascetur tincidunt. Iaculis curabitur tempor maecenas sit. Cras eu enim leo sit eu quis quis ullamcorper. Bibendum quam consectetur et suspendisse duis aliquam cras. Aliquet in malesuada quis augue turpis fringilla iaculis quam pretium. Nulla id non eu non vel donec. Scelerisque tellus praesent suspendisse egestas at scelerisque. Leo at semper gravida sit leo odio.
-                  </p>
-                  <p>
-                    Nibh hac dolor odio in curabitur. Cursus ornare id elit cras dolor. Tincidunt sed quisque sed enim nulla metus. Dui porttitor scelerisque ullamcorper id praesent semper platea nisi. Id ullamcorper vehicula velit egestas id. Tristique arcu facilisi ipsum arcu fermentum tellus. Facilisi augue orci dolor id sit. Aliquam auctor interdum turpis sit ut viverra id nullam. Lobortis mauris neque elit massa a. Nibh pharetra bibendum fermentum consectetur pharetra volutpat eu amet.
+                    We keep your contact details and job information for as long as is reasonably necessary to complete the work and comply with any legal obligations. If you ask us to delete your information, we will do so promptly unless we are required to retain it by law.
                   </p>
                 </div>
               </div>
 
-              {/* Your Rights */}
+              {/* Cookies */}
               <div>
                 <h2 className="text-4xl font-bold text-black mb-4">
-                  Your Rights
+                  Cookies
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur. Lorem et purus enim velit sed vel laoreet enim non. Eros ultrices ut risus quisque curabitur aliquet eget nascetur tincidunt. Iaculis curabitur tempor maecenas sit. Cras eu enim leo sit eu quis quis ullamcorper. Bibendum quam consectetur et suspendisse duis aliquam cras. Aliquet in malesuada quis augue turpis fringilla iaculis quam pretium. Nulla id non eu non vel donec. Scelerisque tellus praesent suspendisse egestas at scelerisque. Leo at semper gravida sit leo odio.
+                    This website uses only the cookies necessary to make it function correctly. We do not use advertising or analytics tracking cookies. If this changes in the future, this policy will be updated and you will be informed via a cookie consent notice.
                   </p>
                 </div>
               </div>
 
-              {/* Contact Us */}
+              {/* Your Rights Under UK GDPR */}
               <div>
                 <h2 className="text-4xl font-bold text-black mb-4">
-                  Contact Us
+                  Your Rights Under UK GDPR
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring interoperable internal or "organic" sources.
+                    Under UK data protection law, you have the right to access the personal information we hold about you, to request that we correct inaccurate information, and to request deletion of your information. You also have the right to object to certain uses of your information.
+                  </p>
+                  <p>
+                    To exercise any of these rights, contact us at cheshiresprayingspecialists@gmail.com. We will respond within one calendar month.
+                  </p>
+                </div>
+              </div>
+
+              {/* How to Make a Complaint */}
+              <div>
+                <h2 className="text-4xl font-bold text-black mb-4">
+                  How to Make a Complaint
+                </h2>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    If you believe we have not handled your personal information correctly, you have the right to make a complaint to the Information Commissioner's Office (ICO) — the UK regulator for data protection. You can contact the ICO at ico.org.uk or by calling 0303 123 1113.
                   </p>
                 </div>
               </div>
