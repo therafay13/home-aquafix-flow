@@ -301,7 +301,7 @@ const About = () => {
             </div>
             <div className="flex items-center">
               <p className="text-muted-foreground">
-                We believe in the power of teamwork. Our diverse team of skilled professionals collaborates seamlessly to tackle even the most complex spraying challenges. By fostering a culture of collaboration, respect.
+                We built this business on the belief that most things don't need replacing — they just need the right finish. Every value below comes back to that: do the job properly, leave the site cleaner than you found it, and price it honestly.
               </p>
             </div>
           </div>
@@ -339,7 +339,7 @@ const About = () => {
                 <div>
                   <h3 className="text-black font-bold mb-4">Our Mission</h3>
                   <p className="text-muted-foreground mb-8 font-semibold text-justify leading-relaxed">
-                    At Cheshire Spraying Specialists, our mission is to provide top-quality spraying services that ensure the safety, functionality, and efficiency. We are committed to delivering exceptional customer service, reliable solutions, and expert craftsmanship.
+                    At Cheshire Spraying Specialists, our mission is simple: to save homeowners and businesses from the unnecessary cost and waste of replacement. Whether it's a kitchen that still works perfectly, uPVC that just needs a fresh colour, or a shop front that should look sharp again — we spray it, finish it to a workshop standard, and make it last.
                   </p>
                   <ul className="space-y-4">
                     {missionFeatures.map((feature, index) => <li key={index} className="flex items-start gap-3">
@@ -356,7 +356,7 @@ const About = () => {
                 <div>
                   <h3 className="text-black font-bold mb-4">Our Vision</h3>
                   <p className="text-muted-foreground mb-8 font-semibold text-justify leading-relaxed">
-                    Our vision is to be the leading provider of spraying services in our community, our integrity, innovation, and excellence. We aim to set the standard for quality and reliability in the spraying industry.
+                    Our vision is to be the spray painting contractor Cheshire recommends by name. Not the biggest — the most trusted. We invest in better equipment and better coatings every year, because the only direction the standard of finish should move is up.
                   </p>
                   <ul className="space-y-4">
                     {visionFeatures.map((feature, index) => <li key={index} className="flex items-start gap-3">
