@@ -14,7 +14,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { services } from "@/data/services";
 import { supabase } from "@/integrations/supabase/client";
-import { Clock, DollarSign, Mail, MapPin, Phone, Wrench } from "lucide-react";
+import { Clock, PoundSterling, Mail, MapPin, Phone, Wrench } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { toast } from "sonner";
@@ -212,7 +212,7 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
-                      <DollarSign className="w-5 h-5 text-accent" />
+                      <PoundSterling className="w-5 h-5 text-accent" />
                       <div>
                         <p className="text-sm text-primary-foreground/70">Estimate</p>
                         <p className="font-bold text-lg">£{quoteData.estimatedMin} - £{quoteData.estimatedMax}</p>
