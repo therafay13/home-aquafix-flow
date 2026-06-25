@@ -59,7 +59,7 @@ const Hero = () => {
     <div className="container-custom section-padding relative z-10">
       <div className="grid lg:grid-cols-2 gap-12 relative items-center min-h-[calc(100vh-8rem)]">
         {/* Left Content */}
-        <div className="max-w-7xl lg:min-w-[700px] relative z-10">
+        <div className="max-w-7xl lg:min-w-[700px] relative z-10 pb-16">
           <div className="animate-fade-up">
             <h1 className="text-white font-bold mb-6 text-5xl md:text-6xl lg:text-7xl leading-[1.1] max-w-[800px] text-left xl:text-7xl">
               Spray Painting Specialists
