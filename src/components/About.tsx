@@ -37,7 +37,7 @@ const About = () => {
         <FadeIn>
           <div className="relative">
             <div className="rounded-3xl overflow-hidden">
-              <img src={plumberTeam} alt="Cheshire Spray Specialists at work" className="w-full h-auto object-cover" />
+              <img src={plumberTeam} alt="Cheshire Spraying Specialists at work" className="w-full h-auto object-cover" />
             </div>
             {/* Experience Badge */}
             <div className="absolute -bottom-12 w-[240px] h-[240px] -right-12 overflow-hidden rounded-xl text-white">

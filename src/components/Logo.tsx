@@ -10,7 +10,7 @@ const Logo = ({ isDark = false }: { isDark?: boolean }) => {
           height="44"
           viewBox="0 0 44 44"
           fill="none"
-          aria-label="Cheshire Spray Specialists"
+          aria-label="Cheshire Spraying Specialists"
         >
           {/* Stencil-style hex shield */}
           <path

@@ -254,8 +254,8 @@ const About = () => {
                           <img src={item.image} alt={item.title} className="w-full h-64 object-cover" />
                         </div>
                         {item.position === 'left' && <div className="mt-6 lg:block hidden">
-                          <h4 className="text-white font-bold mb-2">{item.title === "Our Journey" || item.title === "Cheshire Spray Specialists Overview" ? item.title : ""}</h4>
-                          {(item.title === "Our Journey" || item.title === "Cheshire Spray Specialists Overview") && <p className="text-white/60 text-sm">{item.description}</p>}
+                          <h4 className="text-white font-bold mb-2">{item.title === "Our Journey" || item.title === "Cheshire Spraying Specialists Overview" ? item.title : ""}</h4>
+                          {(item.title === "Our Journey" || item.title === "Cheshire Spraying Specialists Overview") && <p className="text-white/60 text-sm">{item.description}</p>}
                         </div>}
                       </div>
 
@@ -339,7 +339,7 @@ const About = () => {
                 <div>
                   <h3 className="text-black font-bold mb-4">Our Mission</h3>
                   <p className="text-muted-foreground mb-8 font-semibold text-justify leading-relaxed">
-                    At Cheshire Spray Specialists, our mission is to provide top-quality spraying services that ensure the safety, functionality, and efficiency. We are committed to delivering exceptional customer service, reliable solutions, and expert craftsmanship.
+                    At Cheshire Spraying Specialists, our mission is to provide top-quality spraying services that ensure the safety, functionality, and efficiency. We are committed to delivering exceptional customer service, reliable solutions, and expert craftsmanship.
                   </p>
                   <ul className="space-y-4">
                     {missionFeatures.map((feature, index) => <li key={index} className="flex items-start gap-3">
