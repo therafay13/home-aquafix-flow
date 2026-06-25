@@ -63,7 +63,7 @@ const timelineData = [{
   position: "left"
 }, {
   year: "Today",
-  title: "Cheshire's Spray Specialists",
+  title: "Cheshire's Spraying Specialists",
   description: "Now a small, expert team covering all of Cheshire and Ellesmere Port — domestic, commercial and industrial — with the same tidy, workshop-grade ethos.",
   image: heroGrid4,
   position: "right"
@@ -175,7 +175,7 @@ const About = () => {
             <div className="flex lg:flex-row w-full flex-col gap-12 items-end justify-between mb-12">
               <div>
                 <h1 className="leading-tight text-black font-bold text-6xl">
-                  Most things don't need<br />replacing. They need finishing.
+                  Most things don't need<br />replacing. They need <span className="text-tertiary">finishing.</span>
                 </h1>
               </div>
               <div className="flex max-w-[468px] items-center">

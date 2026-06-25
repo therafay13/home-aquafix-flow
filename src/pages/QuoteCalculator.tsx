@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import { services } from "@/data/services";
-import { Calculator, Check, Clock, DollarSign, Wrench } from "lucide-react";
+import { Calculator, Check, Clock, PoundSterling, Wrench } from "lucide-react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -86,22 +86,22 @@ const QuoteCalculator = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-card">
+      <section className="pt-32 pb-16 bg-primary">
         <div className="container-custom section-padding text-center">
           <FadeIn>
             <div className="flex items-center justify-center gap-2 text-sm mb-6">
-              <Link to="/" className="text-muted-foreground hover:text-foreground">
+              <Link to="/" className="text-white/50 hover:text-white">
                 Home
               </Link>
-              <span className="text-muted-foreground">/</span>
-              <span className="text-primary font-medium">Quote Calculator</span>
+              <span className="text-white/50">/</span>
+              <span className="text-tertiary font-medium">Quote Calculator</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Get Your Free Spray Estimate
             </h1>
 
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            <p className="text-white/70 max-w-2xl mx-auto text-lg">
               Pick the surface, the size of the job and how urgent it is — we'll give you an
               instant ballpark for your spray project anywhere in Cheshire & Ellesmere Port.
             </p>
@@ -139,7 +139,7 @@ const QuoteCalculator = () => {
                             <div className="flex items-center gap-3">
                               <span>{s.title}</span>
                               <span className="text-muted-foreground">
-                                (from ${s.basePrice}/hr)
+                                (from £{s.basePrice}/hr)
                               </span>
                             </div>
                           </SelectItem>
@@ -268,7 +268,7 @@ const QuoteCalculator = () => {
                 <div className="bg-primary rounded-2xl p-8 text-primary-foreground">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                      <DollarSign className="w-6 h-6" />
+                      <PoundSterling className="w-6 h-6" />
                     </div>
                     <h2 className="text-2xl font-bold">Your Estimate</h2>
                   </div>
@@ -278,7 +278,7 @@ const QuoteCalculator = () => {
                       <div>
                         <p className="text-primary-foreground/70 mb-2">Estimated Cost Range</p>
                         <p className="text-5xl md:text-6xl font-bold">
-                          ${estimate.min} - ${estimate.max}
+                          £{estimate.min} - £{estimate.max}
                         </p>
                       </div>
 
@@ -297,7 +297,7 @@ const QuoteCalculator = () => {
                           <p className="font-medium">{estimatedHours[0]} hours estimated</p>
                         </div>
                         <div className="flex items-center gap-3">
-                          <DollarSign className="w-5 h-5 text-accent" />
+                          <PoundSterling className="w-5 h-5 text-accent" />
                           <p className="font-medium capitalize">{urgency} service</p>
                         </div>
                       </div>
@@ -337,7 +337,7 @@ const QuoteCalculator = () => {
                           }`}
                       >
                         <span className="text-sm font-medium text-black">{s.title}</span>
-                        <span className="text-sm font-bold text-primary">${s.basePrice}/hr</span>
+                        <span className="text-sm font-bold text-primary">£{s.basePrice}/hr</span>
                       </div>
                     ))}
                   </div>
@@ -366,8 +366,8 @@ const QuoteCalculator = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <FadeIn delay={100}>
               <div className="bg-[#f3f3f6] h-full rounded-2xl p-8 text-center">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Wrench className="w-8 h-8 text-primary" />
+                <div className="w-16 h-16 rounded-full bg-tertiary/15 flex items-center justify-center mx-auto mb-4">
+                  <Wrench className="w-8 h-8 text-tertiary" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-black">Service Type</h3>
                 <p className="text-muted-foreground">
@@ -379,8 +379,8 @@ const QuoteCalculator = () => {
 
             <FadeIn delay={200}>
               <div className="bg-[#f3f3f6] h-full rounded-2xl p-8 text-center">
-                <div className="w-16 h-16 rounded-full bg-accent/30 flex items-center justify-center mx-auto mb-4">
-                  <Calculator className="w-8 h-8 text-primary/50" />
+                <div className="w-16 h-16 rounded-full bg-tertiary/15 flex items-center justify-center mx-auto mb-4">
+                  <Calculator className="w-8 h-8 text-tertiary" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-black">Job Complexity</h3>
                 <p className="text-muted-foreground">
@@ -391,8 +391,8 @@ const QuoteCalculator = () => {
 
             <FadeIn delay={300}>
               <div className="bg-[#f3f3f6] h-full rounded-2xl p-8 text-center">
-                <div className="w-16 h-16 rounded-full bg-yellow-600/30 flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 rounded-full bg-tertiary/15 flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-8 h-8 text-tertiary" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-black">Urgency Level</h3>
                 <p className="text-muted-foreground">
