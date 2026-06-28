@@ -217,7 +217,7 @@ const QuoteCalculator = () => {
                   {service && (
                     <FadeIn delay={200}>
                       <div className="space-y-3">
-                        <Label className="text-base font-medium text-black`">
+                        <Label className="text-base font-medium text-black">
                           Service Urgency
                         </Label>
                         <div className="grid grid-cols-3 gap-3">
@@ -235,11 +235,11 @@ const QuoteCalculator = () => {
                           <button
                             onClick={() => setUrgency("urgent")}
                             className={`p-4 rounded-xl border-2 text-center transition-all ${urgency === "urgent"
-                              ? "border-accent bg-accent/5"
-                              : "border-border hover:border-accent/50"
+                              ? "border-tertiary bg-tertiary/5"
+                              : "border-border hover:border-tertiary/50"
                               }`}
                           >
-                            <Clock className="w-5 h-5 mx-auto mb-2 text-yellow-600" />
+                            <Clock className="w-5 h-5 mx-auto mb-2 text-tertiary" />
                             <p className="font-semibold text-sm text-primary">Urgent</p>
                             <p className="text-xs text-muted-foreground">1.25x rate</p>
                           </button>

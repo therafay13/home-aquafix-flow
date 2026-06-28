@@ -33,7 +33,7 @@ const contactInfo = [
     title: "Service Area",
     description: "Free site visits across the region",
     value: "Ellesmere Port & all of Cheshire",
-    href: "https://www.google.com/maps?q=Ellesmere+Port+UK",
+    href: "https://www.google.com/maps?q=Unit+23+Clayhill+Industrial+Estate+Neston+CH64+3RU",
   },
   {
     icon: Phone,

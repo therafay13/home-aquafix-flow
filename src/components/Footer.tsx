@@ -133,10 +133,10 @@ const Footer = () => {
             </li>
             <li className="flex items-start gap-3">
               <MapPin className="h-5 w-5 text-tertiary flex-shrink-0 mt-0.5" />
-              <a href="https://www.google.com/maps?q=Ellesmere+Port+UK" className="text-white/60 text-sm" target="_blank" rel="noopener noreferrer">
-                Ellesmere Port,
+              <a href="https://www.google.com/maps?q=Unit+23+Clayhill+Industrial+Estate+Neston+CH64+3RU" className="text-white/60 text-sm hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                Unit 23, Clayhill Industrial Estate,
                 <br />
-                Serving all of Cheshire
+                Neston, CH64 3RU
               </a>
             </li>
           </ul>
