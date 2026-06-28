@@ -58,7 +58,7 @@ const About = () => {
           </FadeIn>
           <FadeIn delay={300}>
             <p className="text-muted-foreground mb-8 font-semibold">
-              Based in Neston, Cheshire and covering the whole of Cheshire, we revive kitchens, uPVC, garage doors and commercial surfaces with factory-grade spray finishes — saving you the cost and disruption of replacement.
+              Based in Neston and covering the whole of Cheshire, we revive kitchens, uPVC, garage doors and commercial surfaces with factory-grade spray finishes — saving you the cost and disruption of replacement.
             </p>
           </FadeIn>
 

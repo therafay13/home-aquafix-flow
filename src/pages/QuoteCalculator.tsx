@@ -98,7 +98,7 @@ const QuoteCalculator = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Get Your Free Spray Estimate
+              Get Your <span className="text-tertiary">Free</span> Spray Estimate
             </h1>
 
             <p className="text-white/70 max-w-2xl mx-auto text-lg">

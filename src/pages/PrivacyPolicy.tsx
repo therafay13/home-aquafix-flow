@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Cheshire Spraying Specialists is a spray painting and surface coating business based in Ellesmere Port, Cheshire. We operate across Cheshire and the surrounding area, providing kitchen resprays, uPVC spraying, garage door resprays, fascia and soffit coatings, and commercial spray painting services. This privacy policy explains how we collect, use, and protect your personal information when you use this website or contact us for a quote.
+                    Cheshire Spraying Specialists is a spray painting and surface coating business based in Neston, Cheshire. We operate across Cheshire and the surrounding area, providing kitchen resprays, uPVC spraying, garage door resprays, fascia and soffit coatings, and commercial spray painting services. This privacy policy explains how we collect, use, and protect your personal information when you use this website or contact us for a quote.
                   </p>
                   <p>
                     If you have any questions about this policy, contact us at: cheshiresprayingspecialists@gmail.com or by calling 07882 395895.
