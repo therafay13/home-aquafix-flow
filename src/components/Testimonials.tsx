@@ -77,7 +77,7 @@ const Testimonials = () => {
     </FadeIn>
 
     {/* Marquee Row 2 - Slides Right */}
-    <FadeIn delay={400}>
+    <FadeIn delay={400} className="hidden md:block">
       <div className="relative">
         <div className="flex gap-4 animate-marquee-right">
           {duplicatedTestimonials.map((testimonial, index) => <TestimonialCard key={`row2-${index}`} {...testimonial} />)}

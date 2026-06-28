@@ -47,7 +47,7 @@ const Experience = () => {
           <p className="text-tertiary font-bold mb-4 uppercase tracking-widest text-sm">Welcome to Cheshire Spraying Specialists</p>
         </FadeIn>
         <FadeIn delay={100}>
-          <h2 className="text-black font-bold text-5xl">
+          <h2 className="text-black font-bold text-2xl md:text-4xl lg:text-5xl">
             Twenty-five years of spraying kitchens, uPVC and industrial coatings across Cheshire — without ever leaving a mess behind.
           </h2>
         </FadeIn>
@@ -78,10 +78,10 @@ const Experience = () => {
           </FadeIn>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-3 gap-2 md:gap-6 mb-8">
             {stats.map((stat, index) => <FadeIn key={index} delay={500 + index * 100}>
               <div>
-                <div className="text-4xl md:text-5xl font-bold mb-1 text-primary">
+                <div className="text-2xl md:text-4xl lg:text-5xl font-bold mb-1 text-primary">
                   <CounterAnimation
                     target={stat.number}
                     decimals={stat.decimals}

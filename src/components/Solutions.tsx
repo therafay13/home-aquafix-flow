@@ -33,11 +33,11 @@ const features = [{
   description: "Bring us a colour code, sample or Pinterest board — we'll match it and spray it."
 }];
 const About = () => {
-  return <section id="about" className="py-20 pb-40 relative bg-card">
+  return <section id="about" className="py-20 lg:pb-40 relative bg-card">
     <div className="container-custom section-padding">
       <div className="grid lg:grid-cols-2 gap-28 items-start">
         {/* Right - Content */}
-        <div>
+        <div className="order-2 lg:order-1">
           <FadeIn delay={100}>
             <p className="text-tertiary mb-4 font-bold uppercase tracking-widest text-sm">Why Choose Us</p>
           </FadeIn>
@@ -77,13 +77,13 @@ const About = () => {
           </Link>
         </div>
         {/* Left - Image */}
-        <FadeIn className="h-[90%]">
-          <div className="relative h-full">
-            <div className="rounded-3xl h-full overflow-hidden">
+        <FadeIn className="order-1 lg:order-2 h-[90%]">
+          <div className="relative lg:h-full">
+            <div className="rounded-3xl overflow-hidden aspect-[4/3] lg:aspect-auto lg:h-full">
               <img src={heroPlumber} alt="Spray painter at work on uPVC window" className="h-auto w-full object-cover" />
             </div>
             {/* Experience Badge */}
-            <div className="absolute -bottom-12 w-[240px] h-[240px] -left-12 overflow-hidden rounded-xl text-white">
+            <div className="hidden lg:block absolute -bottom-12 w-[240px] h-[240px] -left-12 overflow-hidden rounded-xl text-white">
               <img src={teamPlumber} alt="Close-up of HVLP spray finish" className="h-full object-cover " />
             </div>
           </div>

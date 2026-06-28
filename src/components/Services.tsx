@@ -31,7 +31,7 @@ const Services = () => {
             <p className="text-tertiary font-bold mb-4 uppercase tracking-widest text-sm">Our Services</p>
           </FadeIn>
           <FadeIn delay={100}>
-            <h2 className="text-black mb-6 text-6xl">
+            <h2 className="text-black mb-6 text-3xl md:text-5xl lg:text-6xl">
               <span className="relative inline-block">
                 <span className="relative z-10">Specialist Spray</span>
               </span>
@@ -56,8 +56,8 @@ const Services = () => {
         <div className="space-y-4">
           {services.map((service, index) => <FadeIn key={index} delay={index * 100}>
             <Link to={`/services/${service.slug}`}>
-              <div className="group px-12 py-[41px] rounded-2xl cursor-pointer transition-all duration-500 bg-white hover:bg-tertiary">
-                <div className="flex items-start gap-6 px-0 ">
+              <div className="group px-5 md:px-12 py-[41px] rounded-2xl cursor-pointer transition-all duration-500 bg-white hover:bg-tertiary">
+                <div className="flex items-start gap-3 md:gap-6 px-0">
                   {/* Number Circle */}
                   <div className="w-12 h-12 rounded-full border flex items-center justify-center flex-shrink-0 transition-colors duration-500 border-primary text-primary">
                     <span className="font-medium">{service.number}</span>
