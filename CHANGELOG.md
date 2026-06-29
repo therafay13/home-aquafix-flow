@@ -25,6 +25,8 @@ vertical image marquee (which snapped instead of looping seamlessly).
 
 | Hash | Message |
 | --- | --- |
+| `e0d9142` | fix(quote): mobile service dropdown overflow + emergency urgency label spill |
+| `175aee7` | docs: add CHANGELOG.md documenting full commit history |
 | `f9a8889` | fix(hero): seamless vertical marquee via items-start (fix translate box-height) |
 | `d7bcf28` | fix(hero): seamless vertical marquee via tripled content + -33.333% translate |
 | `12c5d7b` | fix(hero): seamless marquee loop (remove mt-8, negative animationDelay) and tighten mobile gap |
@@ -179,9 +181,9 @@ plus early database security work.
 
 ## Stats at a glance
 
-- **Total commits:** 61
+- **Total commits:** 63
 - **Earliest:** `4b7a36b` — 2026-06-18 (Initial commit from Lovable/Remix)
-- **Latest:** `f9a8889` — 2026-06-29 (seamless hero marquee fix, pushed to origin)
+- **Latest:** `e0d9142` — 2026-06-29 (quote calculator mobile fixes, pushed to origin)
 - **Branch:** `main` (synced with `origin/main`)
 
 ---
