@@ -118,7 +118,7 @@ const Hero = () => {
         {/* Right Side - Image Grid with Marquee */}
         <div style={{
           width: '432px'
-        }} className="hidden lg:flex gap-7 justify-end absolute right-0 top-0 bottom-0 overflow-hidden z-0">
+        }} className="hidden lg:flex gap-7 items-start justify-end absolute right-0 top-0 bottom-0 overflow-hidden z-0">
           {/* Left Column - slides down continuously */}
           <div className="flex flex-col animate-marquee-down">
             {[...leftColumnImages, ...leftColumnImages, ...leftColumnImages].map((image, index) => <div key={index} className="overflow-hidden flex-shrink-0 pb-4">
