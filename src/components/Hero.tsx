@@ -59,9 +59,9 @@ const Hero = () => {
   return <section className="relative bg-primary overflow-hidden">
     {/* Content */}
     <div className="container-custom section-padding relative z-10">
-      <div className="grid lg:grid-cols-2 gap-12 relative items-center min-h-[calc(100vh-8rem)]">
+      <div className="grid lg:grid-cols-2 gap-12 relative items-center lg:min-h-[calc(100vh-8rem)]">
         {/* Left Content */}
-        <div className="max-w-7xl lg:min-w-[700px] relative z-10 pb-16">
+        <div className="max-w-7xl lg:min-w-[700px] relative z-10 pb-8 lg:pb-16">
           <div className="animate-fade-up">
             <h1 className="text-white font-bold mb-6 text-5xl md:text-6xl lg:text-7xl leading-[1.1] max-w-[800px] text-left xl:text-7xl">
               Spray Painting Specialists
@@ -127,7 +127,7 @@ const Hero = () => {
           </div>
 
           {/* Right Column - slides up continuously */}
-          <div className="flex flex-col animate-marquee-up mt-8">
+          <div className="flex flex-col animate-marquee-up" style={{ animationDelay: "-5s" }}>
             {[...rightColumnImages, ...rightColumnImages].map((image, index) => <div key={index} className="overflow-hidden flex-shrink-0 pb-4">
               <img src={image.src} alt={image.alt} className={`w-full h-48 object-cover ${image.className}`} />
             </div>)}
