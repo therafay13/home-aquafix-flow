@@ -115,7 +115,7 @@ const QuoteCalculator = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Calculator Form */}
             <FadeIn>
-              <div className="bg-[#f3f3f6] sticky top-6 h-max rounded-2xl p-8 shadow-sm">
+              <div className="bg-[#f3f3f6] sticky top-6 h-max rounded-2xl p-5 md:p-8 shadow-sm">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Calculator className="w-6 h-6 text-primary" />
@@ -130,15 +130,15 @@ const QuoteCalculator = () => {
                       Select Service
                     </Label>
                     <Select value={selectedService} onValueChange={setSelectedService}>
-                      <SelectTrigger className="h-14 text-base text-black bg-white">
+                      <SelectTrigger className="h-12 md:h-14 text-base text-black bg-white">
                         <SelectValue placeholder="Choose a service..." />
                       </SelectTrigger>
-                      <SelectContent>
+                      <SelectContent className="max-w-[calc(100vw-3rem)]">
                         {services.map((s) => (
                           <SelectItem key={s.slug} value={s.slug} className="text-base">
-                            <div className="flex items-center gap-3">
-                              <span>{s.title}</span>
-                              <span className="text-muted-foreground">
+                            <div className="flex flex-col min-w-0">
+                              <span className="truncate">{s.title}</span>
+                              <span className="text-xs text-muted-foreground truncate">
                                 (from £{s.basePrice}/hr)
                               </span>
                             </div>
@@ -220,38 +220,38 @@ const QuoteCalculator = () => {
                         <Label className="text-base font-medium text-black">
                           Service Urgency
                         </Label>
-                        <div className="grid grid-cols-3 gap-3">
+                        <div className="grid grid-cols-3 gap-2 sm:gap-3">
                           <button
                             onClick={() => setUrgency("standard")}
-                            className={`p-4 rounded-xl border-2 text-center transition-all ${urgency === "standard"
+                            className={`p-2.5 sm:p-4 rounded-xl border-2 text-center transition-all min-w-0 ${urgency === "standard"
                               ? "border-primary bg-primary/5"
                               : "border-border hover:border-primary/50"
                               }`}
                           >
                             <Clock className="w-5 h-5 mx-auto mb-2 text-muted-foreground" />
-                            <p className="font-semibold text-sm text-primary">Standard</p>
+                            <p className="font-semibold text-xs sm:text-sm text-primary">Standard</p>
                             <p className="text-xs text-muted-foreground">1x rate</p>
                           </button>
                           <button
                             onClick={() => setUrgency("urgent")}
-                            className={`p-4 rounded-xl border-2 text-center transition-all ${urgency === "urgent"
+                            className={`p-2.5 sm:p-4 rounded-xl border-2 text-center transition-all min-w-0 ${urgency === "urgent"
                               ? "border-tertiary bg-tertiary/5"
                               : "border-border hover:border-tertiary/50"
                               }`}
                           >
                             <Clock className="w-5 h-5 mx-auto mb-2 text-tertiary" />
-                            <p className="font-semibold text-sm text-primary">Urgent</p>
+                            <p className="font-semibold text-xs sm:text-sm text-primary">Urgent</p>
                             <p className="text-xs text-muted-foreground">1.25x rate</p>
                           </button>
                           <button
                             onClick={() => setUrgency("emergency")}
-                            className={`p-4 rounded-xl border-2 text-center transition-all ${urgency === "emergency"
+                            className={`p-2.5 sm:p-4 rounded-xl border-2 text-center transition-all min-w-0 ${urgency === "emergency"
                               ? "border-destructive bg-destructive/5"
                               : "border-border hover:border-destructive/50"
                               }`}
                           >
                             <Clock className="w-5 h-5 mx-auto mb-2 text-destructive" />
-                            <p className="font-semibold text-sm text-primary">Emergency</p>
+                            <p className="font-semibold text-xs sm:text-sm text-primary">Emergency</p>
                             <p className="text-xs text-muted-foreground">1.5x rate</p>
                           </button>
                         </div>
