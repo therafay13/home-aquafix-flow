@@ -276,12 +276,12 @@ export default {
   					transform: 'translateY(0)'
   				},
   				'100%': {
-  					transform: 'translateY(-50%)'
+  					transform: 'translateY(-33.333%)'
   				}
   			},
   			'marquee-down': {
   				'0%': {
-  					transform: 'translateY(-50%)'
+  					transform: 'translateY(-33.333%)'
   				},
   				'100%': {
   					transform: 'translateY(0)'

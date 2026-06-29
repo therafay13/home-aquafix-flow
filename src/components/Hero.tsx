@@ -121,14 +121,14 @@ const Hero = () => {
         }} className="hidden lg:flex gap-7 justify-end absolute right-0 top-0 bottom-0 overflow-hidden z-0">
           {/* Left Column - slides down continuously */}
           <div className="flex flex-col animate-marquee-down">
-            {[...leftColumnImages, ...leftColumnImages].map((image, index) => <div key={index} className="overflow-hidden flex-shrink-0 pb-4">
+            {[...leftColumnImages, ...leftColumnImages, ...leftColumnImages].map((image, index) => <div key={index} className="overflow-hidden flex-shrink-0 pb-4">
               <img src={image.src} alt={image.alt} className={`w-full h-48 object-cover ${image.className}`} />
             </div>)}
           </div>
 
           {/* Right Column - slides up continuously */}
           <div className="flex flex-col animate-marquee-up" style={{ animationDelay: "-5s" }}>
-            {[...rightColumnImages, ...rightColumnImages].map((image, index) => <div key={index} className="overflow-hidden flex-shrink-0 pb-4">
+            {[...rightColumnImages, ...rightColumnImages, ...rightColumnImages].map((image, index) => <div key={index} className="overflow-hidden flex-shrink-0 pb-4">
               <img src={image.src} alt={image.alt} className={`w-full h-48 object-cover ${image.className}`} />
             </div>)}
           </div>
