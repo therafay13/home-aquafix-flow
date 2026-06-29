@@ -54,6 +54,8 @@ const Hero = () => {
     alt: "Painter masking uPVC fascias and soffits on-site",
     className: "rounded-full"
   }];
+  const allImages = [...leftColumnImages, ...rightColumnImages];
+  const mobileStripImages = [...allImages, ...allImages, ...allImages];
   return <section className="relative bg-primary overflow-hidden">
     {/* Content */}
     <div className="container-custom section-padding relative z-10">
@@ -118,17 +120,28 @@ const Hero = () => {
           width: '432px'
         }} className="hidden lg:flex gap-7 justify-end absolute right-0 top-0 bottom-0 overflow-hidden z-0">
           {/* Left Column - slides down continuously */}
-          <div className="flex flex-col gap-4 animate-marquee-down">
-            {[...leftColumnImages, ...leftColumnImages].map((image, index) => <div key={index} className="overflow-hidden flex-shrink-0">
-              <img src={image.src} alt={image.alt} className={`w-50 h-50 object-cover ${image.className}`} />
+          <div className="flex flex-col animate-marquee-down">
+            {[...leftColumnImages, ...leftColumnImages].map((image, index) => <div key={index} className="overflow-hidden flex-shrink-0 pb-4">
+              <img src={image.src} alt={image.alt} className={`w-full h-48 object-cover ${image.className}`} />
             </div>)}
           </div>
 
           {/* Right Column - slides up continuously */}
-          <div className="flex flex-col gap-4 animate-marquee-up mt-8">
-            {[...rightColumnImages, ...rightColumnImages].map((image, index) => <div key={index} className="overflow-hidden flex-shrink-0">
-              <img src={image.src} alt={image.alt} className={`w-50 h-50 object-cover ${image.className}`} />
+          <div className="flex flex-col animate-marquee-up mt-8">
+            {[...rightColumnImages, ...rightColumnImages].map((image, index) => <div key={index} className="overflow-hidden flex-shrink-0 pb-4">
+              <img src={image.src} alt={image.alt} className={`w-full h-48 object-cover ${image.className}`} />
             </div>)}
+          </div>
+        </div>
+
+        {/* Mobile image strip — visible on mobile only */}
+        <div className="lg:hidden overflow-hidden -mx-4 md:-mx-8 pb-8 pt-2">
+          <div className="flex gap-3 animate-marquee-left w-max">
+            {mobileStripImages.map((image, index) => (
+              <div key={index} className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+              </div>
+            ))}
           </div>
         </div>
       </div>
