@@ -170,6 +170,17 @@ const Header = ({
             {link.name}
             {link.hasDropdown && <ChevronDown className="h-4 w-4" />}
           </a>)}
+          <div className="border-t border-white/10 my-1" />
+          {overflowLinks.map(link => (
+            <Link
+              key={link.name}
+              to={link.href}
+              onClick={() => setIsOpen(false)}
+              className={`flex items-center gap-1 ${isDark ? 'text-white/70' : 'text-[#595B67]/70'} hover:text-[#595B67] transition-colors text-sm font-medium py-2`}
+            >
+              {link.name}
+            </Link>
+          ))}
           <Button variant="hero" size="default" className="mt-4">
             <Phone className="h-4 w-4 mr-2" />
             Call 07882 395895

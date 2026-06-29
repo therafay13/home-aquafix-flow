@@ -74,9 +74,9 @@ const Footer = () => {
   return <footer className="bg-primary pt-16 pb-8">
     <div className="container-custom section-padding">
       {/* Top Section */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-12 mb-12">
         {/* Brand Column */}
-        <div className="lg:col-span-2">
+        <div className="col-span-2 lg:col-span-2">
           <Logo isDark />
           <p className="text-white/60 mt-4 mb-6 max-w-sm">
             Specialist spray painting across Cheshire and Ellesmere Port — kitchens, uPVC, garage doors and commercial coatings, finished to a factory standard.
@@ -117,7 +117,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div>
+        <div className="col-span-2 lg:col-span-1">
           <h6 className="text-white font-semibold mb-4">Contact</h6>
           <ul className="space-y-4">
             <li className="flex items-start gap-3">

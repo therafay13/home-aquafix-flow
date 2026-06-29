@@ -174,7 +174,7 @@ const About = () => {
           <FadeIn>
             <div className="flex lg:flex-row w-full flex-col gap-12 items-end justify-between mb-12">
               <div>
-                <h1 className="leading-tight text-black font-bold text-6xl">
+                <h1 className="leading-tight text-black font-bold text-3xl md:text-5xl lg:text-6xl">
                   Most things don't need<br />replacing. They need <span className="text-tertiary">finishing.</span>
                 </h1>
               </div>
@@ -193,10 +193,10 @@ const About = () => {
               </div>
 
               {/* Stats Overlay */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-white rounded-2xl shadow-xl px-8 py-6">
-                <div className="flex divide-x divide-gray-200">
-                  {stats.map((stat, index) => <div key={index} className="px-6 first:pl-0 last:pr-0 text-center">
-                    <div className="flex items-baseline justify-center gap-0.5 text-4xl md:text-5xl font-bold mb-1 text-primary">
+              <div className="mt-4 md:mt-0 md:absolute md:bottom-0 md:left-1/2 md:-translate-x-1/2 md:translate-y-1/2 bg-white rounded-2xl shadow-xl px-4 md:px-8 py-6">
+                <div className="grid grid-cols-2 gap-4 md:flex md:divide-x md:divide-gray-200 md:gap-0">
+                  {stats.map((stat, index) => <div key={index} className="text-center md:px-6 md:first:pl-0 md:last:pr-0">
+                    <div className="flex items-baseline justify-center gap-0.5 text-2xl md:text-4xl lg:text-5xl font-bold mb-1 text-primary">
                       <CounterAnimation
                         target={stat.value}
                         decimals={stat.decimals}

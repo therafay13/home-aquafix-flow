@@ -60,9 +60,24 @@ const FeaturedWorks = () => {
           </FadeIn>
         </div>
 
-        {/* Projects Grid */}
+        {/* Projects Grid — mobile: 2-column static grid */}
         <FadeIn delay={300}>
-          <div className="flex gap-4">
+          <div className="grid grid-cols-2 gap-3 md:hidden">
+            {projects.map((project, index) => (
+              <div key={index} className="relative rounded-2xl overflow-hidden">
+                <img src={project.image} alt={project.title} className="w-full h-44 object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80" />
+                <div className="absolute bottom-0 left-0 right-0 p-3">
+                  <h5 className="text-white text-base font-bold leading-tight">{project.title}</h5>
+                </div>
+              </div>
+            ))}
+          </div>
+        </FadeIn>
+
+        {/* Projects Grid — desktop: hover-expand flex layout */}
+        <FadeIn delay={300}>
+          <div className="hidden md:flex gap-4">
             {projects.map((project, index) => (
               <div
                 key={index}
@@ -76,15 +91,10 @@ const FeaturedWorks = () => {
                   alt={project.title}
                   className="w-full h-80 object-cover"
                 />
-
-                {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80" />
-
-                {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h5 className={`text-white text-3xl font-bold mb-2  ${hoveredIndex === index || (hoveredIndex === null && index === 0) ? "opacity-100" : "opacity-0"}`}>{project.title}</h5>
-                  <p className={`text-white line-clamp-2 transition-opacity duration-300 ${hoveredIndex === index || (hoveredIndex === null && index === 0) ? "opacity-100" : "opacity-0"
-                    }`}>
+                  <h5 className={`text-white text-3xl font-bold mb-2 ${hoveredIndex === index || (hoveredIndex === null && index === 0) ? "opacity-100" : "opacity-0"}`}>{project.title}</h5>
+                  <p className={`text-white line-clamp-2 transition-opacity duration-300 ${hoveredIndex === index || (hoveredIndex === null && index === 0) ? "opacity-100" : "opacity-0"}`}>
                     {project.description}
                   </p>
                 </div>
