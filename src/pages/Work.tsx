@@ -68,7 +68,7 @@ const Work = () => {
 
           {/* Header */}
           <div className="flex max-md:flex-col gap-8 mb-16 justify-between">
-            <h1 className="text-black text-7xl font-bold">Recent <span className="text-tertiary">Spray</span> Projects</h1>
+            <h1 className="text-black text-4xl md:text-5xl lg:text-6xl font-bold">Recent <span className="text-tertiary">Spray</span> Projects</h1>
             <p className="text-muted-foreground max-w-[468px] text-lg font-medium lg:pt-4">
               A selection of recent kitchens, uPVC, garage doors and commercial work sprayed across Cheshire, Ellesmere Port and the Wirral.
             </p>

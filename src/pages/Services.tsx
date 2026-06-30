@@ -20,7 +20,7 @@ const Services = () => {
 
         {/* Header */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          <h1 className="text-black text-7xl font-bold">Our <span className="text-tertiary">Spray</span> Services</h1>
+          <h1 className="text-black text-4xl md:text-5xl lg:text-6xl font-bold">Our <span className="text-tertiary">Spray</span> Services</h1>
           <p className="text-muted-foreground text-lg lg:pt-4">
             Domestic, commercial and industrial spray painting across Cheshire and Ellesmere Port — every surface masked, prepped and finished to a factory standard.
           </p>
