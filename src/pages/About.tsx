@@ -172,9 +172,9 @@ const About = () => {
       <section className="pt-32 pb-20 lg:pb-32 bg-primary-foreground text-primary">
         <div className="container-custom section-padding text-primary-foreground">
           <FadeIn>
-            <div className="flex lg:flex-row w-full flex-col gap-12 items-end justify-between mb-12">
+            <div className="flex lg:flex-row w-full flex-col gap-12 items-start lg:items-end justify-between mb-12">
               <div>
-                <h1 className="leading-tight text-black font-bold text-3xl md:text-5xl lg:text-6xl">
+                <h1 className="leading-tight text-black font-bold text-4xl md:text-5xl lg:text-6xl">
                   Most things don't need<br />replacing. They need <span className="text-tertiary">finishing.</span>
                 </h1>
               </div>
