@@ -70,7 +70,7 @@ const Testimonials = () => {
     {/* Marquee Row 1 - Slides Left */}
     <FadeIn delay={300}>
       <div className="relative mb-4">
-        <div className="flex gap-4 animate-marquee-left">
+        <div className="flex gap-4 animate-marquee-left w-max">
           {duplicatedTestimonials.map((testimonial, index) => <TestimonialCard key={`row1-${index}`} {...testimonial} />)}
         </div>
       </div>
@@ -79,7 +79,7 @@ const Testimonials = () => {
     {/* Marquee Row 2 - Slides Right */}
     <FadeIn delay={400} className="hidden md:block">
       <div className="relative">
-        <div className="flex gap-4 animate-marquee-right">
+        <div className="flex gap-4 animate-marquee-right w-max">
           {duplicatedTestimonials.map((testimonial, index) => <TestimonialCard key={`row2-${index}`} {...testimonial} />)}
         </div>
       </div>
