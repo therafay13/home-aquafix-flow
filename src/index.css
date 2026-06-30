@@ -257,10 +257,10 @@
 
 @media (max-width: 767px) {
   .animate-marquee-left {
-    animation-duration: 12s;
+    animation-duration: 35s;
   }
   .animate-marquee-right {
-    animation-duration: 12s;
+    animation-duration: 35s;
   }
 }
 
