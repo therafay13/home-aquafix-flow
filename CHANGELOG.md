@@ -1,7 +1,7 @@
 # Changelog — Cheshire Spraying Specialists Website
 
 > Full commit history for the `home-aquafix-flow` project, grouped by development
-> phase for quick reference. Last updated **2026-06-29**.
+> phase for quick reference. Last updated **2026-06-30**.
 >
 > This is a human-readable companion to `git log`. For exact diffs, run
 > `git show <hash>` or `git log --oneline`.
@@ -15,6 +15,31 @@
 - Conventional Commit prefixes (`feat`, `fix`, `refactor`, `style`, `content`,
   `docs`, `chore`, `copy`) are preserved from the original messages.
 - The project follows the conventions in [`CLAUDE.md`](./CLAUDE.md).
+
+---
+
+## Phase 6 — Sitewide hero consistency & marquee polish (2026-06-30)
+
+Unified the five page heroes onto a single responsive heading scale, and
+fixed the horizontal testimonials marquee (a snap/jump on mobile that was
+a different root cause from the earlier vertical hero marquee bug).
+
+| Hash | Message |
+| --- | --- |
+| `85b1e91` | fix(testimonials): slow mobile marquee to 35s (desktop untouched) |
+| `40d0efa` | style(hero): uniform responsive h1 scale across Services & Work pages |
+| `2b9c223` | fix(testimonials): seamless marquee loop via w-max on translate basis |
+| `48caa0d` | fix(about): mobile hero alignment + heading size parity |
+
+**Notable:** The testimonials marquee snap (`2b9c223`) was a *different*
+bug from the Phase 5 hero vertical marquee fix. Here the marquee-left
+`translateX(-33.333%)` keyframe resolves against the element's own width;
+the container was missing `w-max`, so it shrank to the viewport (~375px
+on mobile) and `-33.333%` translated by ~125px instead of one full card
+set — producing the visible restart each cycle. Adding `w-max` matches the
+proven Hero.tsx marquee pattern. The About hero fixes (`48caa0d`) brought
+its h1 onto the shared `text-4xl md:text-5xl lg:text-6xl` scale and
+left-aligned the mobile layout.
 
 ---
 
@@ -181,9 +206,9 @@ plus early database security work.
 
 ## Stats at a glance
 
-- **Total commits:** 63
+- **Total commits:** 76
 - **Earliest:** `4b7a36b` — 2026-06-18 (Initial commit from Lovable/Remix)
-- **Latest:** `e0d9142` — 2026-06-29 (quote calculator mobile fixes, pushed to origin)
+- **Latest:** `85b1e91` — 2026-06-30 (testimonials mobile marquee speed + uniform hero headings, pushed to origin)
 - **Branch:** `main` (synced with `origin/main`)
 
 ---
